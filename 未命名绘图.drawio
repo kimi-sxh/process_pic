@@ -1,0 +1,91 @@
+<mxfile host="app.diagrams.net" modified="2024-02-18T07:04:45.541Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Safari/537.36" etag="F1lisavKdQjFLNDAfCan" version="23.1.1" type="github">
+  <diagram name="第 1 页" id="XMnR2HnNRaRxLVpBdGDN">
+    <mxGraphModel dx="1723" dy="720" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="2" pageWidth="1169" pageHeight="827" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="suniY4hi-ckUv4VBZ5T7-12" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="20" y="40" width="590" height="1460" as="geometry" />
+        </mxCell>
+        <mxCell id="suniY4hi-ckUv4VBZ5T7-13" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="860" y="280" width="590" height="1160" as="geometry" />
+        </mxCell>
+        <mxCell id="suniY4hi-ckUv4VBZ5T7-14" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1660" y="280" width="590" height="1160" as="geometry" />
+        </mxCell>
+        <mxCell id="suniY4hi-ckUv4VBZ5T7-15" value="&lt;span style=&quot;font-size: 18px;&quot;&gt;风控接入层&lt;/span&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="30" y="1460" width="120" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="suniY4hi-ckUv4VBZ5T7-19" value="&lt;span style=&quot;font-size: 18px;&quot;&gt;风控管理层&lt;/span&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="1670" y="1400" width="120" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="suniY4hi-ckUv4VBZ5T7-20" value="&lt;span style=&quot;font-size: 18px;&quot;&gt;风控服务层&lt;/span&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="860" y="1400" width="120" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="suniY4hi-ckUv4VBZ5T7-23" value="" style="verticalLabelPosition=bottom;verticalAlign=top;html=1;shape=mxgraph.basic.rect;fillColor2=none;strokeWidth=1;size=20;indent=5;" vertex="1" parent="1">
+          <mxGeometry x="870" y="680" width="100" height="350" as="geometry" />
+        </mxCell>
+        <mxCell id="suniY4hi-ckUv4VBZ5T7-24" value="Text" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="830" y="1030" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="suniY4hi-ckUv4VBZ5T7-25" value="&lt;font style=&quot;font-size: 24px;&quot;&gt;风控&lt;br&gt;服务&lt;br&gt;接口（提供Restful API）&lt;/font&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="890" y="840" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="suniY4hi-ckUv4VBZ5T7-26" value="" style="verticalLabelPosition=bottom;verticalAlign=top;html=1;shape=mxgraph.basic.rect;fillColor2=none;strokeWidth=1;size=20;indent=5;" vertex="1" parent="1">
+          <mxGeometry x="990" y="1060" width="430" height="340" as="geometry" />
+        </mxCell>
+        <mxCell id="suniY4hi-ckUv4VBZ5T7-27" value="&lt;h1&gt;风控数据源&lt;/h1&gt;&lt;p&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;font size=&quot;3&quot;&gt;日志信息：访问日志access_log,业务接口请求日志（事先规范日志）；&lt;/font&gt;&lt;/li&gt;&lt;li&gt;&lt;font size=&quot;3&quot;&gt;业务数据：一般存储在数据库；&lt;/font&gt;&lt;/li&gt;&lt;li&gt;&lt;font size=&quot;3&quot;&gt;埋点数据：用户前端行为数据；&lt;/font&gt;&lt;/li&gt;&lt;li&gt;&lt;font size=&quot;3&quot;&gt;外部数据：风险IP,风险手机号，风险设备指纹，一般由外部合作方提供&lt;/font&gt;&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;/p&gt;&lt;p&gt;&lt;font size=&quot;3&quot;&gt;&lt;br&gt;&lt;/font&gt;&lt;/p&gt;" style="text;html=1;strokeColor=none;fillColor=none;spacing=5;spacingTop=-20;whiteSpace=wrap;overflow=hidden;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="1000" y="1070" width="410" height="310" as="geometry" />
+        </mxCell>
+        <mxCell id="suniY4hi-ckUv4VBZ5T7-28" value="" style="verticalLabelPosition=bottom;verticalAlign=top;html=1;shape=mxgraph.basic.rect;fillColor2=none;strokeWidth=1;size=20;indent=5;" vertex="1" parent="1">
+          <mxGeometry x="990" y="690" width="430" height="340" as="geometry" />
+        </mxCell>
+        <mxCell id="suniY4hi-ckUv4VBZ5T7-29" value="&lt;h1&gt;数据分析和处理（高要求计算能力）&lt;/h1&gt;&lt;p&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;font style=&quot;font-size: 18px;&quot;&gt;实时计算：&lt;/font&gt;&lt;/li&gt;&lt;li&gt;&lt;font size=&quot;3&quot;&gt;准实时计算：&lt;/font&gt;&lt;/li&gt;&lt;li&gt;&lt;font size=&quot;3&quot;&gt;离线计算&lt;/font&gt;&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;/p&gt;" style="text;html=1;strokeColor=none;fillColor=none;spacing=5;spacingTop=-20;whiteSpace=wrap;overflow=hidden;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="1000" y="700" width="410" height="320" as="geometry" />
+        </mxCell>
+        <mxCell id="suniY4hi-ckUv4VBZ5T7-30" value="" style="verticalLabelPosition=bottom;verticalAlign=top;html=1;shape=mxgraph.basic.rect;fillColor2=none;strokeWidth=1;size=20;indent=5;" vertex="1" parent="1">
+          <mxGeometry x="990" y="300" width="430" height="340" as="geometry" />
+        </mxCell>
+        <mxCell id="suniY4hi-ckUv4VBZ5T7-31" value="&lt;h1&gt;规则执行层&lt;/h1&gt;&lt;p&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;font size=&quot;3&quot;&gt;规则引擎：为了将规则和代码分离，方便运营人员进行编写&lt;/font&gt;&lt;/li&gt;&lt;li&gt;&lt;font size=&quot;3&quot;&gt;决策引擎：用于处理不同规则集，并且通过逻辑判断，分层计算，各层结果综合计算得到最终风险值&lt;/font&gt;&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;/p&gt;" style="text;html=1;strokeColor=none;fillColor=none;spacing=5;spacingTop=-20;whiteSpace=wrap;overflow=hidden;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="1005" y="310" width="400" height="310" as="geometry" />
+        </mxCell>
+        <mxCell id="suniY4hi-ckUv4VBZ5T7-32" value="" style="verticalLabelPosition=bottom;verticalAlign=top;html=1;shape=mxgraph.basic.rect;fillColor2=none;strokeWidth=1;size=20;indent=5;" vertex="1" parent="1">
+          <mxGeometry x="30" y="50" width="570" height="560" as="geometry" />
+        </mxCell>
+        <mxCell id="suniY4hi-ckUv4VBZ5T7-34" value="&lt;h1&gt;客户端（APP/H5 设备指纹SDK）-标识终端&lt;/h1&gt;&lt;p&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;font style=&quot;font-size: 18px;&quot;&gt;APP客户端设备指纹采集：&lt;/font&gt;&lt;/li&gt;&lt;/ul&gt;&lt;ol&gt;&lt;li&gt;&lt;span style=&quot;font-size: 18px;&quot;&gt;安卓:IMEI,IMSI,cpu编码,内存信息,硬盘编码,SIM卡号,安卓ID,传感器信息,电池信息,设备型号和名称等。MAC地址，蓝牙信息。UserAgent,系统版本，屏幕信息，安装的应用信息。&lt;/span&gt;&lt;/li&gt;&lt;li&gt;&lt;span style=&quot;font-size: 18px;&quot;&gt;IOS:IDFV,IDFA,设备型号和名称。MAC地址。UserAgent和系统版本&lt;/span&gt;&lt;/li&gt;&lt;/ol&gt;&lt;ul&gt;&lt;li&gt;&lt;font style=&quot;font-size: 18px;&quot;&gt;WEB端设备指纹采集：浏览器类型和版本号。操作系统类型和版本。屏幕分辨率，字体，插件，语言和编码等&lt;/font&gt;&lt;/li&gt;&lt;li&gt;&lt;font style=&quot;font-size: 18px;&quot;&gt;微信小程序端：可以使用uuid和OpenID作为设备指纹id&lt;/font&gt;&lt;/li&gt;&lt;/ul&gt;&lt;div&gt;&lt;span style=&quot;font-size: 18px;&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;font-size: 18px;&quot;&gt;【场景】：&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;ul&gt;&lt;li&gt;&lt;span style=&quot;font-size: 18px;&quot;&gt;撞库盗号防护：注册时将设备指纹和帐号一一对应，登陆的时候可以看是不是登陆新的设备，如果是就要求短信验证码验证，这个时候验证码攻击者很难获取；&lt;/span&gt;&lt;/li&gt;&lt;li&gt;&lt;span style=&quot;font-size: 18px;&quot;&gt;欺诈识别：①没有带上设备指纹或者指纹信息不完整，拒绝请求；②如果单设备大量登陆用户，可以限制一个设备几个帐号登陆；③使用第三方黑指纹库，只要命中黑名单就判定这个用户是欺诈用户&lt;/span&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;&lt;p&gt;&lt;/p&gt;&lt;p&gt;&lt;font style=&quot;font-size: 18px;&quot;&gt;【设备指纹自身防护和安全&lt;/font&gt;&lt;span style=&quot;font-size: 18px; background-color: initial;&quot;&gt;对抗】&lt;/span&gt;&lt;/p&gt;" style="text;html=1;strokeColor=none;fillColor=none;spacing=5;spacingTop=-20;whiteSpace=wrap;overflow=hidden;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="35" y="60" width="560" height="540" as="geometry" />
+        </mxCell>
+        <mxCell id="suniY4hi-ckUv4VBZ5T7-36" value="" style="verticalLabelPosition=bottom;verticalAlign=top;html=1;shape=mxgraph.basic.rect;fillColor2=none;strokeWidth=1;size=20;indent=5;" vertex="1" parent="1">
+          <mxGeometry x="30" y="670" width="560" height="360" as="geometry" />
+        </mxCell>
+        <mxCell id="suniY4hi-ckUv4VBZ5T7-37" value="" style="verticalLabelPosition=bottom;verticalAlign=top;html=1;shape=mxgraph.basic.rect;fillColor2=none;strokeWidth=1;size=20;indent=5;" vertex="1" parent="1">
+          <mxGeometry x="35" y="1045" width="560" height="360" as="geometry" />
+        </mxCell>
+        <mxCell id="suniY4hi-ckUv4VBZ5T7-39" value="&lt;h1&gt;业务场景&lt;/h1&gt;&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.&lt;/p&gt;" style="text;html=1;strokeColor=none;fillColor=none;spacing=5;spacingTop=-20;whiteSpace=wrap;overflow=hidden;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="40" y="680" width="550" height="340" as="geometry" />
+        </mxCell>
+        <mxCell id="suniY4hi-ckUv4VBZ5T7-40" value="&lt;h1&gt;风险处置&lt;/h1&gt;&lt;p&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;font size=&quot;3&quot;&gt;加强验证：短信、图形，滑动验证码&lt;/font&gt;&lt;/li&gt;&lt;li&gt;&lt;font size=&quot;3&quot;&gt;人工处置：&lt;/font&gt;&lt;/li&gt;&lt;li&gt;&lt;font size=&quot;3&quot;&gt;阻断业务请求：&lt;/font&gt;&lt;/li&gt;&lt;li&gt;&lt;font size=&quot;3&quot;&gt;申诉通道：&lt;/font&gt;&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;/p&gt;" style="text;html=1;strokeColor=none;fillColor=none;spacing=5;spacingTop=-20;whiteSpace=wrap;overflow=hidden;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="40" y="1050" width="550" height="350" as="geometry" />
+        </mxCell>
+        <mxCell id="suniY4hi-ckUv4VBZ5T7-44" value="" style="verticalLabelPosition=bottom;verticalAlign=top;html=1;shape=mxgraph.basic.rect;fillColor2=none;strokeWidth=1;size=20;indent=5;" vertex="1" parent="1">
+          <mxGeometry x="1670" y="287.5" width="570" height="365" as="geometry" />
+        </mxCell>
+        <mxCell id="suniY4hi-ckUv4VBZ5T7-45" value="" style="verticalLabelPosition=bottom;verticalAlign=top;html=1;shape=mxgraph.basic.rect;fillColor2=none;strokeWidth=1;size=20;indent=5;" vertex="1" parent="1">
+          <mxGeometry x="1670" y="660" width="570" height="365" as="geometry" />
+        </mxCell>
+        <mxCell id="suniY4hi-ckUv4VBZ5T7-46" value="" style="verticalLabelPosition=bottom;verticalAlign=top;html=1;shape=mxgraph.basic.rect;fillColor2=none;strokeWidth=1;size=20;indent=5;" vertex="1" parent="1">
+          <mxGeometry x="1670" y="1035" width="570" height="365" as="geometry" />
+        </mxCell>
+        <mxCell id="suniY4hi-ckUv4VBZ5T7-47" value="&lt;h1&gt;规则管理（应可视化，易于编写，测试和发布）&lt;/h1&gt;&lt;p&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;font style=&quot;font-size: 18px;&quot;&gt;模版管理（管理员）：规则类型、规则参数、规则计算条件&lt;/font&gt;&lt;/li&gt;&lt;li&gt;&lt;font style=&quot;font-size: 18px;&quot;&gt;规则管理（运营人员）：&lt;/font&gt;&lt;/li&gt;&lt;li&gt;&lt;font style=&quot;font-size: 18px;&quot;&gt;处置管理：定义各种类型风险值处置策略，提供给业务使用；&lt;/font&gt;&lt;/li&gt;&lt;li&gt;&lt;font style=&quot;font-size: 18px;&quot;&gt;业务接入管理：业务接入配置（业务ID,关联到规则或者规则集和处置策略上）&lt;/font&gt;&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;/p&gt;" style="text;html=1;strokeColor=none;fillColor=none;spacing=5;spacingTop=-20;whiteSpace=wrap;overflow=hidden;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="1680" y="290" width="550" height="350" as="geometry" />
+        </mxCell>
+        <mxCell id="suniY4hi-ckUv4VBZ5T7-48" value="&lt;h1&gt;业务管理（针对不同业务可启用相应规则，配置相应处置措施，停用或启用风控）&lt;/h1&gt;&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.&lt;/p&gt;" style="text;html=1;strokeColor=none;fillColor=none;spacing=5;spacingTop=-20;whiteSpace=wrap;overflow=hidden;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="1680" y="670" width="550" height="340" as="geometry" />
+        </mxCell>
+        <mxCell id="suniY4hi-ckUv4VBZ5T7-49" value="&lt;h1&gt;基础管理&lt;/h1&gt;&lt;p&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;font style=&quot;font-size: 18px;&quot;&gt;数据源接入：&lt;/font&gt;&lt;/li&gt;&lt;li&gt;&lt;font style=&quot;font-size: 18px;&quot;&gt;黑白名单管理：黑名单、灰名单、白名单管理&lt;/font&gt;&lt;/li&gt;&lt;li&gt;&lt;font style=&quot;font-size: 18px;&quot;&gt;【统计和报表】：展示风控运营数据，为风控规则运行效果提供数据支撑，方便运营人员进行规则的调整和管理。包括有：风控查询、调用量统计、命中率统计、报表管理&lt;/font&gt;&lt;/li&gt;&lt;li&gt;&lt;font style=&quot;font-size: 18px;&quot;&gt;【权限管理】：用户管理（创建风控系统用户，关联到角色）、角色管理、菜单管理（来管控个角色人员所拥有的权限）、风控接口服务基础配置&lt;/font&gt;&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;/p&gt;" style="text;html=1;strokeColor=none;fillColor=none;spacing=5;spacingTop=-20;whiteSpace=wrap;overflow=hidden;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="1680" y="1045" width="550" height="345" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
