@@ -1,5 +1,5 @@
-<mxfile host="app.diagrams.net" modified="2024-02-19T07:49:53.339Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Safari/537.36" etag="GDV-b3Cmu21P8n507NcA" version="23.1.1" type="github" pages="2">
-  <diagram name="第 1 页" id="XMnR2HnNRaRxLVpBdGDN">
+<mxfile host="app.diagrams.net" modified="2024-02-19T09:18:42.479Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Safari/537.36" etag="nP9NdSyRs-_riwo5L8z8" version="23.1.1" type="github" pages="3">
+  <diagram name="11.1 风控系统架构" id="XMnR2HnNRaRxLVpBdGDN">
     <mxGraphModel dx="1867" dy="780" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="2" pageWidth="1169" pageHeight="827" math="0" shadow="0">
       <root>
         <mxCell id="0" />
@@ -31,16 +31,16 @@
         <mxCell id="suniY4hi-ckUv4VBZ5T7-26" value="" style="verticalLabelPosition=bottom;verticalAlign=top;html=1;shape=mxgraph.basic.rect;fillColor2=none;strokeWidth=1;size=20;indent=5;" parent="1" vertex="1">
           <mxGeometry x="970" y="1150" width="500" height="460" as="geometry" />
         </mxCell>
-        <mxCell id="9OfGcog4DmEIdkGzpw0e-11" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="suniY4hi-ckUv4VBZ5T7-27" target="suniY4hi-ckUv4VBZ5T7-29">
+        <mxCell id="9OfGcog4DmEIdkGzpw0e-11" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" parent="1" source="suniY4hi-ckUv4VBZ5T7-27" target="suniY4hi-ckUv4VBZ5T7-29" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="suniY4hi-ckUv4VBZ5T7-27" value="&lt;h1&gt;风控数据源&lt;/h1&gt;&lt;p&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;font size=&quot;3&quot;&gt;日志信息（使用FileBeat,输出到es，通过logstash输出到es,kafka,redis）：&lt;/font&gt;&lt;/li&gt;&lt;/ul&gt;&lt;span style=&quot;font-size: medium; background-color: initial;&quot;&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;访问日志access_log,&lt;/span&gt;&lt;br&gt;&lt;span style=&quot;font-size: medium; background-color: initial;&quot;&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;业务接口请求日志（事先规范日志）：最好包含前端信息ip和UserAgent&lt;/span&gt;&lt;br&gt;&lt;ul&gt;&lt;li&gt;&lt;font size=&quot;3&quot;&gt;业务数据：一般存储在数据库(使用阿里巴巴canal获取mysql binlog输出到kafka)；&lt;/font&gt;&lt;/li&gt;&lt;li&gt;&lt;font size=&quot;3&quot;&gt;埋点数据：用户前端行为数据(用户id,渠道来源，事件类型，事件环境，其他信息)；&lt;/font&gt;&lt;/li&gt;&lt;li&gt;&lt;font size=&quot;3&quot;&gt;外部数据：风险IP,风险手机号，风险设备指纹，一般由外部合作方提供&lt;/font&gt;&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;/p&gt;&lt;p&gt;&lt;font size=&quot;3&quot;&gt;&lt;br&gt;&lt;/font&gt;&lt;/p&gt;" style="text;html=1;strokeColor=none;fillColor=none;spacing=5;spacingTop=-20;whiteSpace=wrap;overflow=hidden;rounded=0;" parent="1" vertex="1">
+        <mxCell id="suniY4hi-ckUv4VBZ5T7-27" value="&lt;h1&gt;11.3 风控数据源&lt;/h1&gt;&lt;p&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;font size=&quot;3&quot;&gt;日志信息（使用FileBeat,输出到es，通过logstash输出到es,kafka,redis）：&lt;/font&gt;&lt;/li&gt;&lt;/ul&gt;&lt;span style=&quot;font-size: medium; background-color: initial;&quot;&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;访问日志access_log,&lt;/span&gt;&lt;br&gt;&lt;span style=&quot;font-size: medium; background-color: initial;&quot;&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;业务接口请求日志（事先规范日志）：最好包含前端信息ip和UserAgent&lt;/span&gt;&lt;br&gt;&lt;ul&gt;&lt;li&gt;&lt;font size=&quot;3&quot;&gt;业务数据：一般存储在数据库(使用阿里巴巴canal获取mysql binlog输出到kafka)；&lt;/font&gt;&lt;/li&gt;&lt;li&gt;&lt;font size=&quot;3&quot;&gt;埋点数据：用户前端行为数据(用户id,渠道来源，事件类型，事件环境，其他信息)；&lt;/font&gt;&lt;/li&gt;&lt;li&gt;&lt;font size=&quot;3&quot;&gt;外部数据：风险IP,风险手机号，风险设备指纹，一般由外部合作方提供&lt;/font&gt;&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;/p&gt;&lt;p&gt;&lt;font size=&quot;3&quot;&gt;&lt;br&gt;&lt;/font&gt;&lt;/p&gt;" style="text;html=1;strokeColor=none;fillColor=none;spacing=5;spacingTop=-20;whiteSpace=wrap;overflow=hidden;rounded=0;" parent="1" vertex="1">
           <mxGeometry x="970" y="1150" width="500" height="460" as="geometry" />
         </mxCell>
         <mxCell id="suniY4hi-ckUv4VBZ5T7-28" value="" style="verticalLabelPosition=bottom;verticalAlign=top;html=1;shape=mxgraph.basic.rect;fillColor2=none;strokeWidth=1;size=20;indent=5;" parent="1" vertex="1">
           <mxGeometry x="970" y="610" width="500" height="470" as="geometry" />
         </mxCell>
-        <mxCell id="9OfGcog4DmEIdkGzpw0e-14" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="suniY4hi-ckUv4VBZ5T7-29" target="suniY4hi-ckUv4VBZ5T7-31">
+        <mxCell id="9OfGcog4DmEIdkGzpw0e-14" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" parent="1" source="suniY4hi-ckUv4VBZ5T7-29" target="suniY4hi-ckUv4VBZ5T7-31" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="suniY4hi-ckUv4VBZ5T7-29" value="&lt;h1&gt;11.4 数据分析和处理（高要求计算能力）-Flink&lt;/h1&gt;&lt;p&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;font style=&quot;font-size: 18px;&quot;&gt;实时计算：数据是实时到达且无界；需要及时计算（如一个请求进来时，要马上发起计算任务）；需要及时存储和使用（计算结果要存储到存储系统中）；处理时效要求非常高&lt;/font&gt;&lt;/li&gt;&lt;li&gt;&lt;font size=&quot;3&quot;&gt;准实时计算：主要用于风控指标和风控画像的计算和生成。如计算异常请求IP，异常手机号码，异常设备指纹等。计算周期可以是10分钟，1小时，4小时，一天等&lt;/font&gt;&lt;/li&gt;&lt;li&gt;&lt;font size=&quot;3&quot;&gt;离线计算：&lt;/font&gt;&lt;/li&gt;&lt;/ul&gt;&lt;div&gt;&lt;font size=&quot;3&quot;&gt;&lt;b&gt;【Flink场景】：&lt;/b&gt;&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;ul&gt;&lt;li&gt;&lt;font size=&quot;3&quot;&gt;创建数据输入：Socket、集合、文件、Apache Kafka、RabbitMQ等&lt;/font&gt;&lt;/li&gt;&lt;li&gt;&lt;font size=&quot;3&quot;&gt;进行数据计算：Flink提供便捷方法进行计算（如当前时间起前一分钟内请求IP数）&lt;/font&gt;&lt;/li&gt;&lt;li&gt;&lt;font size=&quot;3&quot;&gt;数据输出：输出到MySQL,ElasticSearch,Kafka,Redis,RabbitMQ,ActiveMQ&lt;/font&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;&lt;div&gt;&lt;font size=&quot;3&quot;&gt;&lt;br&gt;&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font size=&quot;3&quot;&gt;将结果存入Mysql/Redis/ElasticSearch&lt;/font&gt;&lt;/div&gt;&lt;p&gt;&lt;/p&gt;" style="text;html=1;strokeColor=none;fillColor=none;spacing=5;spacingTop=-20;whiteSpace=wrap;overflow=hidden;rounded=0;" parent="1" vertex="1">
@@ -49,26 +49,26 @@
         <mxCell id="suniY4hi-ckUv4VBZ5T7-30" value="" style="verticalLabelPosition=bottom;verticalAlign=top;html=1;shape=mxgraph.basic.rect;fillColor2=none;strokeWidth=1;size=20;indent=5;" parent="1" vertex="1">
           <mxGeometry x="970" y="50" width="500" height="490" as="geometry" />
         </mxCell>
-        <mxCell id="suniY4hi-ckUv4VBZ5T7-31" value="&lt;h1&gt;规则执行层&lt;/h1&gt;&lt;p&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;font size=&quot;3&quot;&gt;规则引擎：为了将规则和代码分离，方便运营人员进行编写&lt;/font&gt;&lt;/li&gt;&lt;li&gt;&lt;font size=&quot;3&quot;&gt;决策引擎：用于处理不同规则集，并且通过逻辑判断，分层计算，各层结果综合计算得到最终风险值&lt;/font&gt;&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;/p&gt;" style="text;html=1;strokeColor=none;fillColor=none;spacing=5;spacingTop=-20;whiteSpace=wrap;overflow=hidden;rounded=0;" parent="1" vertex="1">
+        <mxCell id="suniY4hi-ckUv4VBZ5T7-31" value="&lt;h1&gt;11.5 规则执行层&lt;/h1&gt;&lt;p&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;font size=&quot;3&quot;&gt;规则引擎：为了将规则和代码分离，方便运营人员进行编写。负责管理风控规则（规则编写，修改，测试和执行等）&lt;/font&gt;&lt;/li&gt;&lt;li&gt;&lt;font size=&quot;3&quot;&gt;决策引擎：用于处理不同规则集，并且通过逻辑判断，分层计算，各层结果综合计算得到最终风险值&lt;/font&gt;&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;/p&gt;" style="text;html=1;strokeColor=none;fillColor=none;spacing=5;spacingTop=-20;whiteSpace=wrap;overflow=hidden;rounded=0;" parent="1" vertex="1">
           <mxGeometry x="970" y="50" width="500" height="490" as="geometry" />
         </mxCell>
         <mxCell id="suniY4hi-ckUv4VBZ5T7-32" value="" style="verticalLabelPosition=bottom;verticalAlign=top;html=1;shape=mxgraph.basic.rect;fillColor2=none;strokeWidth=1;size=20;indent=5;" parent="1" vertex="1">
           <mxGeometry x="25" y="45" width="575" height="565" as="geometry" />
         </mxCell>
-        <mxCell id="9OfGcog4DmEIdkGzpw0e-5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="suniY4hi-ckUv4VBZ5T7-34" target="suniY4hi-ckUv4VBZ5T7-39">
+        <mxCell id="9OfGcog4DmEIdkGzpw0e-5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="suniY4hi-ckUv4VBZ5T7-34" target="suniY4hi-ckUv4VBZ5T7-39" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="suniY4hi-ckUv4VBZ5T7-34" value="&lt;h1&gt;客户端（APP/H5 设备指纹SDK）-标识终端&lt;/h1&gt;&lt;p&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;font style=&quot;font-size: 18px;&quot;&gt;APP客户端设备指纹采集：&lt;/font&gt;&lt;/li&gt;&lt;/ul&gt;&lt;ol&gt;&lt;li&gt;&lt;span style=&quot;font-size: 18px;&quot;&gt;安卓:IMEI,IMSI,cpu编码,内存信息,硬盘编码,SIM卡号,安卓ID,传感器信息,电池信息,设备型号和名称等。MAC地址，蓝牙信息。UserAgent,系统版本，屏幕信息，安装的应用信息。&lt;/span&gt;&lt;/li&gt;&lt;li&gt;&lt;span style=&quot;font-size: 18px;&quot;&gt;IOS:IDFV,IDFA,设备型号和名称。MAC地址。UserAgent和系统版本&lt;/span&gt;&lt;/li&gt;&lt;/ol&gt;&lt;ul&gt;&lt;li&gt;&lt;font style=&quot;font-size: 18px;&quot;&gt;WEB端设备指纹采集：浏览器类型和版本号。操作系统类型和版本。屏幕分辨率，字体，插件，语言和编码等&lt;/font&gt;&lt;/li&gt;&lt;li&gt;&lt;font style=&quot;font-size: 18px;&quot;&gt;微信小程序端：可以使用uuid和OpenID作为设备指纹id&lt;/font&gt;&lt;/li&gt;&lt;/ul&gt;&lt;div&gt;&lt;span style=&quot;font-size: 18px;&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;font-size: 18px;&quot;&gt;【场景】：&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;ul&gt;&lt;li&gt;&lt;span style=&quot;font-size: 18px;&quot;&gt;撞库盗号防护：注册时将设备指纹和帐号一一对应，登陆的时候可以看是不是登陆新的设备，如果是就要求短信验证码验证，这个时候验证码攻击者很难获取；&lt;/span&gt;&lt;/li&gt;&lt;li&gt;&lt;span style=&quot;font-size: 18px;&quot;&gt;欺诈识别：①没有带上设备指纹或者指纹信息不完整，拒绝请求；②如果单设备大量登陆用户，可以限制一个设备几个帐号登陆；③使用第三方黑指纹库，只要命中黑名单就判定这个用户是欺诈用户&lt;/span&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;&lt;p&gt;&lt;/p&gt;&lt;p&gt;&lt;font style=&quot;font-size: 18px;&quot;&gt;【设备指纹自身防护和安全&lt;/font&gt;&lt;span style=&quot;font-size: 18px; background-color: initial;&quot;&gt;对抗】&lt;/span&gt;&lt;/p&gt;" style="text;html=1;strokeColor=none;fillColor=none;spacing=5;spacingTop=-20;whiteSpace=wrap;overflow=hidden;rounded=0;" parent="1" vertex="1">
-          <mxGeometry x="35" y="80" width="565" height="530" as="geometry" />
+        <mxCell id="suniY4hi-ckUv4VBZ5T7-34" value="&lt;h1&gt;11.2 客户端（APP/H5 设备指纹SDK）-标识终端&lt;/h1&gt;&lt;p&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;font style=&quot;font-size: 18px;&quot;&gt;APP客户端设备指纹采集：&lt;/font&gt;&lt;/li&gt;&lt;/ul&gt;&lt;ol&gt;&lt;li&gt;&lt;span style=&quot;font-size: 18px;&quot;&gt;安卓:IMEI,IMSI,cpu编码,内存信息,硬盘编码,SIM卡号,安卓ID,传感器信息,电池信息,设备型号和名称等。MAC地址，蓝牙信息。UserAgent,系统版本，屏幕信息，安装的应用信息。&lt;/span&gt;&lt;/li&gt;&lt;li&gt;&lt;span style=&quot;font-size: 18px;&quot;&gt;IOS:IDFV,IDFA,设备型号和名称。MAC地址。UserAgent和系统版本&lt;/span&gt;&lt;/li&gt;&lt;/ol&gt;&lt;ul&gt;&lt;li&gt;&lt;font style=&quot;font-size: 18px;&quot;&gt;WEB端设备指纹采集：浏览器类型和版本号。操作系统类型和版本。屏幕分辨率，字体，插件，语言和编码等&lt;/font&gt;&lt;/li&gt;&lt;li&gt;&lt;font style=&quot;font-size: 18px;&quot;&gt;微信小程序端：可以使用uuid和OpenID作为设备指纹id&lt;/font&gt;&lt;/li&gt;&lt;/ul&gt;&lt;div&gt;&lt;span style=&quot;font-size: 18px;&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;font-size: 18px;&quot;&gt;【场景】：&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;ul&gt;&lt;li&gt;&lt;span style=&quot;font-size: 18px;&quot;&gt;撞库盗号防护：注册时将设备指纹和帐号一一对应，登陆的时候可以看是不是登陆新的设备，如果是就要求短信验证码验证，这个时候验证码攻击者很难获取；&lt;/span&gt;&lt;/li&gt;&lt;li&gt;&lt;span style=&quot;font-size: 18px;&quot;&gt;欺诈识别：①没有带上设备指纹或者指纹信息不完整，拒绝请求；②如果单设备大量登陆用户，可以限制一个设备几个帐号登陆；③使用第三方黑指纹库，只要命中黑名单就判定这个用户是欺诈用户&lt;/span&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;&lt;p&gt;&lt;/p&gt;&lt;p&gt;&lt;font style=&quot;font-size: 18px;&quot;&gt;【设备指纹自身防护和安全&lt;/font&gt;&lt;span style=&quot;font-size: 18px; background-color: initial;&quot;&gt;对抗】&lt;/span&gt;&lt;/p&gt;" style="text;html=1;strokeColor=none;fillColor=none;spacing=5;spacingTop=-20;whiteSpace=wrap;overflow=hidden;rounded=0;" parent="1" vertex="1">
+          <mxGeometry x="26.25" y="50" width="573.75" height="560" as="geometry" />
         </mxCell>
         <mxCell id="suniY4hi-ckUv4VBZ5T7-36" value="" style="verticalLabelPosition=bottom;verticalAlign=top;html=1;shape=mxgraph.basic.rect;fillColor2=none;strokeWidth=1;size=20;indent=5;" parent="1" vertex="1">
-          <mxGeometry x="30" y="660" width="560" height="530" as="geometry" />
+          <mxGeometry x="25" y="630" width="565" height="550" as="geometry" />
         </mxCell>
         <mxCell id="suniY4hi-ckUv4VBZ5T7-37" value="" style="verticalLabelPosition=bottom;verticalAlign=top;html=1;shape=mxgraph.basic.rect;fillColor2=none;strokeWidth=1;size=20;indent=5;" parent="1" vertex="1">
           <mxGeometry x="25" y="1210" width="565" height="410" as="geometry" />
         </mxCell>
-        <mxCell id="suniY4hi-ckUv4VBZ5T7-39" value="&lt;h1&gt;业务场景&lt;/h1&gt;&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.&lt;/p&gt;" style="text;html=1;strokeColor=none;fillColor=none;spacing=5;spacingTop=-20;whiteSpace=wrap;overflow=hidden;rounded=0;" parent="1" vertex="1">
-          <mxGeometry x="30" y="660" width="560" height="530" as="geometry" />
+        <mxCell id="suniY4hi-ckUv4VBZ5T7-39" value="&lt;h1&gt;11.6 业务场景（风控业务接入）&lt;/h1&gt;&lt;p&gt;&lt;font style=&quot;font-size: 18px;&quot;&gt;1、【业务场景接入】：在业务风控系统增加拦截层（调用sdk或api）&lt;/font&gt;&lt;/p&gt;&lt;p&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;span style=&quot;font-size: 18px;&quot;&gt;业务接入改造：业务标识ID,业务访问渠道，手机号，帐号，Cookie/Token,IP地址，请求时间戳，设备指纹信息；&lt;/span&gt;&lt;/li&gt;&lt;li&gt;&lt;span style=&quot;font-size: 18px;&quot;&gt;常见业务场景：注册场景，登陆场景，业务操作场景（如支付，秒杀，签到，抽奖等）；&lt;/span&gt;&lt;/li&gt;&lt;li&gt;&lt;span style=&quot;font-size: 18px;&quot;&gt;对接：建议开发风控接入SDK；&lt;/span&gt;&lt;/li&gt;&lt;/ul&gt;&lt;div&gt;&lt;span style=&quot;font-size: 18px;&quot;&gt;2、【风控接口服务】&lt;/span&gt;&lt;/div&gt;&lt;ul&gt;&lt;li&gt;&lt;span style=&quot;font-size: 18px;&quot;&gt;风控接口：请求接口，洗白接口，申述接口；&lt;/span&gt;&lt;/li&gt;&lt;li&gt;&lt;span style=&quot;font-size: 18px;&quot;&gt;服务功能（请求接口）：将参数解析并传递给规则引擎，规则引擎解析参数后，将请求(结合数据分析和处理的结果)转发到对应规则集；响应包含有：响应码、时间戳、风险处置建议（一般是code）&lt;/span&gt;&lt;/li&gt;&lt;li&gt;&lt;font style=&quot;font-size: 18px;&quot;&gt;要注意接口服务性能；&lt;/font&gt;&lt;/li&gt;&lt;li&gt;&lt;span style=&quot;font-size: 18px;&quot;&gt;风控服务接口逃生机制；&lt;/span&gt;&lt;/li&gt;&lt;/ul&gt;&lt;div&gt;&lt;span style=&quot;font-size: 18px;&quot;&gt;3、【风险处置】&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;ul&gt;&lt;li&gt;&lt;font style=&quot;font-size: 18px;&quot;&gt;无风险通过，高风险阻断、中风险需要加强验证&lt;/font&gt;&lt;br&gt;&lt;/li&gt;&lt;li&gt;&lt;font style=&quot;font-size: 18px;&quot;&gt;方式有：&lt;/font&gt;&lt;/li&gt;&lt;/ul&gt;&lt;ol&gt;&lt;li&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;&lt;font size=&quot;3&quot;&gt;人机识别验证码类型-字符类验证码，点选式验证码（如图片和汉字），滑动验证码（划到缺口，划到最右边），VTT验证码&lt;/font&gt;&lt;/span&gt;&lt;/li&gt;&lt;li&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;&lt;font size=&quot;3&quot;&gt;短信验证码，上行短信验证&lt;/font&gt;&lt;br&gt;&lt;/span&gt;&lt;/li&gt;&lt;/ol&gt;&lt;/div&gt;&lt;p&gt;&lt;/p&gt;" style="text;html=1;strokeColor=none;fillColor=none;spacing=5;spacingTop=-20;whiteSpace=wrap;overflow=hidden;rounded=0;" parent="1" vertex="1">
+          <mxGeometry x="27.5" y="630" width="562.5" height="550" as="geometry" />
         </mxCell>
         <mxCell id="suniY4hi-ckUv4VBZ5T7-40" value="&lt;h1&gt;风险处置&lt;/h1&gt;&lt;p&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;font size=&quot;3&quot;&gt;加强验证：短信、图形，滑动验证码&lt;/font&gt;&lt;/li&gt;&lt;li&gt;&lt;font size=&quot;3&quot;&gt;人工处置：&lt;/font&gt;&lt;/li&gt;&lt;li&gt;&lt;font size=&quot;3&quot;&gt;阻断业务请求：&lt;/font&gt;&lt;/li&gt;&lt;li&gt;&lt;font size=&quot;3&quot;&gt;申诉通道：&lt;/font&gt;&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;/p&gt;" style="text;html=1;strokeColor=none;fillColor=none;spacing=5;spacingTop=-20;whiteSpace=wrap;overflow=hidden;rounded=0;" parent="1" vertex="1">
           <mxGeometry x="30" y="1210" width="560" height="410" as="geometry" />
@@ -91,121 +91,210 @@
         <mxCell id="suniY4hi-ckUv4VBZ5T7-49" value="&lt;h1&gt;基础管理&lt;/h1&gt;&lt;p&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;font style=&quot;font-size: 18px;&quot;&gt;数据源接入：&lt;/font&gt;&lt;/li&gt;&lt;li&gt;&lt;font style=&quot;font-size: 18px;&quot;&gt;黑白名单管理：黑名单、灰名单、白名单管理&lt;/font&gt;&lt;/li&gt;&lt;li&gt;&lt;font style=&quot;font-size: 18px;&quot;&gt;【统计和报表】：展示风控运营数据，为风控规则运行效果提供数据支撑，方便运营人员进行规则的调整和管理。包括有：风控查询、调用量统计、命中率统计、报表管理&lt;/font&gt;&lt;/li&gt;&lt;li&gt;&lt;font style=&quot;font-size: 18px;&quot;&gt;【权限管理】：用户管理（创建风控系统用户，关联到角色）、角色管理、菜单管理（来管控个角色人员所拥有的权限）、风控接口服务基础配置&lt;/font&gt;&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;/p&gt;" style="text;html=1;strokeColor=none;fillColor=none;spacing=5;spacingTop=-20;whiteSpace=wrap;overflow=hidden;rounded=0;" parent="1" vertex="1">
           <mxGeometry x="1680" y="1045" width="550" height="345" as="geometry" />
         </mxCell>
-        <mxCell id="9OfGcog4DmEIdkGzpw0e-9" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0.009;entryY=0.561;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="suniY4hi-ckUv4VBZ5T7-39" target="suniY4hi-ckUv4VBZ5T7-23">
+        <mxCell id="9OfGcog4DmEIdkGzpw0e-10" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=-0.042;entryY=0.875;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="suniY4hi-ckUv4VBZ5T7-40" target="suniY4hi-ckUv4VBZ5T7-23" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="9OfGcog4DmEIdkGzpw0e-10" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=-0.042;entryY=0.875;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="suniY4hi-ckUv4VBZ5T7-40" target="suniY4hi-ckUv4VBZ5T7-23">
+        <mxCell id="umbqmuaTihPOPtH95g4i-1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0.005;entryY=0.537;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="suniY4hi-ckUv4VBZ5T7-39" target="suniY4hi-ckUv4VBZ5T7-13">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
   </diagram>
-  <diagram id="wzcSj5rFRD3nUaCVPtE8" name="第 2 页">
-    <mxGraphModel dx="1400" dy="585" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
+  <diagram id="wzcSj5rFRD3nUaCVPtE8" name="11.4 数据分析和计算">
+    <mxGraphModel dx="1120" dy="468" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
-        <mxCell id="EVVN6Cf9p_QMSt45fL2O-15" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="EVVN6Cf9p_QMSt45fL2O-15" value="" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="780" y="130" width="220" height="350" as="geometry" />
         </mxCell>
-        <mxCell id="EVVN6Cf9p_QMSt45fL2O-13" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="EVVN6Cf9p_QMSt45fL2O-13" value="" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="470" y="135" width="160" height="75" as="geometry" />
         </mxCell>
-        <mxCell id="EVVN6Cf9p_QMSt45fL2O-10" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="EVVN6Cf9p_QMSt45fL2O-10" value="" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="100" y="130" width="160" height="70" as="geometry" />
         </mxCell>
-        <mxCell id="EVVN6Cf9p_QMSt45fL2O-11" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="EVVN6Cf9p_QMSt45fL2O-11" value="" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="100" y="130" width="160" height="90" as="geometry" />
         </mxCell>
-        <mxCell id="XRURW3PFTgRW1XaGB1Jw-1" value="" style="rounded=0;whiteSpace=wrap;html=1;shadow=1;" vertex="1" parent="1">
+        <mxCell id="XRURW3PFTgRW1XaGB1Jw-1" value="" style="rounded=0;whiteSpace=wrap;html=1;shadow=1;" parent="1" vertex="1">
           <mxGeometry x="40" y="40" width="1090" height="750" as="geometry" />
         </mxCell>
-        <mxCell id="XRURW3PFTgRW1XaGB1Jw-2" value="&lt;font style=&quot;font-size: 48px;&quot;&gt;11.4 数据分析和计算&lt;/font&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+        <mxCell id="XRURW3PFTgRW1XaGB1Jw-2" value="&lt;font style=&quot;font-size: 48px;&quot;&gt;11.4 数据分析和计算&lt;/font&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
           <mxGeometry x="230" y="620" width="670" height="120" as="geometry" />
         </mxCell>
-        <mxCell id="EVVN6Cf9p_QMSt45fL2O-4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="EVVN6Cf9p_QMSt45fL2O-1" target="EVVN6Cf9p_QMSt45fL2O-3">
+        <mxCell id="EVVN6Cf9p_QMSt45fL2O-4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="EVVN6Cf9p_QMSt45fL2O-1" target="EVVN6Cf9p_QMSt45fL2O-3" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="EVVN6Cf9p_QMSt45fL2O-5" value="实时/准实时" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+        <mxCell id="EVVN6Cf9p_QMSt45fL2O-5" value="实时/准实时" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
           <mxGeometry x="340" y="140" width="80" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="EVVN6Cf9p_QMSt45fL2O-6" value="计算" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+        <mxCell id="EVVN6Cf9p_QMSt45fL2O-6" value="计算" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
           <mxGeometry x="350" y="170" width="60" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="EVVN6Cf9p_QMSt45fL2O-12" value="" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="EVVN6Cf9p_QMSt45fL2O-12" value="" style="whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="120" y="130" width="180" height="80" as="geometry" />
         </mxCell>
-        <mxCell id="EVVN6Cf9p_QMSt45fL2O-14" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="EVVN6Cf9p_QMSt45fL2O-14" value="" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="450" y="130" width="160" height="75" as="geometry" />
         </mxCell>
-        <mxCell id="EVVN6Cf9p_QMSt45fL2O-24" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="EVVN6Cf9p_QMSt45fL2O-1" target="EVVN6Cf9p_QMSt45fL2O-21">
+        <mxCell id="EVVN6Cf9p_QMSt45fL2O-24" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" parent="1" source="EVVN6Cf9p_QMSt45fL2O-1" target="EVVN6Cf9p_QMSt45fL2O-21" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="EVVN6Cf9p_QMSt45fL2O-1" value="实时数据流（Flume/Kafka/Logstash）" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;shadow=1;" vertex="1" parent="1">
+        <mxCell id="EVVN6Cf9p_QMSt45fL2O-1" value="实时数据流（Flume/Kafka/Logstash）" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;shadow=1;" parent="1" vertex="1">
           <mxGeometry x="120" y="130" width="180" height="80" as="geometry" />
         </mxCell>
-        <mxCell id="EVVN6Cf9p_QMSt45fL2O-17" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0;exitDx=0;exitDy=0;entryX=0;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="EVVN6Cf9p_QMSt45fL2O-3" target="EVVN6Cf9p_QMSt45fL2O-14">
+        <mxCell id="EVVN6Cf9p_QMSt45fL2O-17" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0;exitDx=0;exitDy=0;entryX=0;entryY=0;entryDx=0;entryDy=0;" parent="1" source="EVVN6Cf9p_QMSt45fL2O-3" target="EVVN6Cf9p_QMSt45fL2O-14" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="EVVN6Cf9p_QMSt45fL2O-18" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=-0.006;entryY=0.108;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="EVVN6Cf9p_QMSt45fL2O-3" target="EVVN6Cf9p_QMSt45fL2O-8">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="EVVN6Cf9p_QMSt45fL2O-3" value="Flink计算框架" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+        <mxCell id="EVVN6Cf9p_QMSt45fL2O-3" value="Flink计算框架" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
           <mxGeometry x="450" y="130" width="160" height="80" as="geometry" />
         </mxCell>
-        <mxCell id="EVVN6Cf9p_QMSt45fL2O-16" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="720" y="125" width="210" height="360" as="geometry" />
+        <mxCell id="EVVN6Cf9p_QMSt45fL2O-16" value="" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="720" y="135" width="210" height="360" as="geometry" />
         </mxCell>
-        <mxCell id="EVVN6Cf9p_QMSt45fL2O-37" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.25;exitDx=0;exitDy=0;" edge="1" parent="1" source="EVVN6Cf9p_QMSt45fL2O-8" target="EVVN6Cf9p_QMSt45fL2O-36">
+        <mxCell id="EVVN6Cf9p_QMSt45fL2O-37" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.25;exitDx=0;exitDy=0;" parent="1" source="EVVN6Cf9p_QMSt45fL2O-8" target="EVVN6Cf9p_QMSt45fL2O-36" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="EVVN6Cf9p_QMSt45fL2O-39" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="EVVN6Cf9p_QMSt45fL2O-8" target="EVVN6Cf9p_QMSt45fL2O-38">
+        <mxCell id="EVVN6Cf9p_QMSt45fL2O-39" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="EVVN6Cf9p_QMSt45fL2O-8" target="EVVN6Cf9p_QMSt45fL2O-38" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="EVVN6Cf9p_QMSt45fL2O-8" value="存储层&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;MySQL&lt;br&gt;Redis&lt;br&gt;ElasticSearch" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+        <mxCell id="EVVN6Cf9p_QMSt45fL2O-8" value="存储层&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;MySQL&lt;br&gt;Redis&lt;br&gt;ElasticSearch" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
           <mxGeometry x="720" y="130" width="210" height="360" as="geometry" />
         </mxCell>
-        <mxCell id="EVVN6Cf9p_QMSt45fL2O-28" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="EVVN6Cf9p_QMSt45fL2O-21" target="EVVN6Cf9p_QMSt45fL2O-27">
+        <mxCell id="EVVN6Cf9p_QMSt45fL2O-28" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" parent="1" source="EVVN6Cf9p_QMSt45fL2O-21" target="EVVN6Cf9p_QMSt45fL2O-27" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="EVVN6Cf9p_QMSt45fL2O-21" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="EVVN6Cf9p_QMSt45fL2O-21" value="" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="120" y="400" width="180" height="100" as="geometry" />
         </mxCell>
-        <mxCell id="EVVN6Cf9p_QMSt45fL2O-22" value="HDFS" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="EVVN6Cf9p_QMSt45fL2O-22" value="HDFS" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="140" y="420" width="140" height="40" as="geometry" />
         </mxCell>
-        <mxCell id="EVVN6Cf9p_QMSt45fL2O-23" value="离线存储" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+        <mxCell id="EVVN6Cf9p_QMSt45fL2O-23" value="离线存储" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
           <mxGeometry x="180" y="470" width="60" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="EVVN6Cf9p_QMSt45fL2O-25" value="离线" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+        <mxCell id="EVVN6Cf9p_QMSt45fL2O-25" value="离线" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
           <mxGeometry x="150" y="290" width="60" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="EVVN6Cf9p_QMSt45fL2O-26" value="计算" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+        <mxCell id="EVVN6Cf9p_QMSt45fL2O-26" value="计算" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
           <mxGeometry x="210" y="290" width="60" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="EVVN6Cf9p_QMSt45fL2O-27" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="EVVN6Cf9p_QMSt45fL2O-27" value="" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="440" y="390" width="180" height="120" as="geometry" />
         </mxCell>
-        <mxCell id="EVVN6Cf9p_QMSt45fL2O-30" value="Spark SQL" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="EVVN6Cf9p_QMSt45fL2O-30" value="Spark SQL" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="460" y="393" width="140" height="20" as="geometry" />
         </mxCell>
-        <mxCell id="EVVN6Cf9p_QMSt45fL2O-31" value="Hive" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="EVVN6Cf9p_QMSt45fL2O-31" value="Hive" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="460" y="420" width="140" height="20" as="geometry" />
         </mxCell>
-        <mxCell id="EVVN6Cf9p_QMSt45fL2O-32" value="MapReduce" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="EVVN6Cf9p_QMSt45fL2O-32" value="MapReduce" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="460" y="450" width="140" height="20" as="geometry" />
         </mxCell>
-        <mxCell id="EVVN6Cf9p_QMSt45fL2O-33" value="离线计算平台" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+        <mxCell id="EVVN6Cf9p_QMSt45fL2O-33" value="离线计算平台" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
           <mxGeometry x="485" y="480" width="90" height="20" as="geometry" />
         </mxCell>
-        <mxCell id="EVVN6Cf9p_QMSt45fL2O-35" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0.006;entryY=0.892;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="EVVN6Cf9p_QMSt45fL2O-27" target="EVVN6Cf9p_QMSt45fL2O-8">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="EVVN6Cf9p_QMSt45fL2O-36" value="API查询" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="EVVN6Cf9p_QMSt45fL2O-36" value="API查询" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="980" y="190" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="EVVN6Cf9p_QMSt45fL2O-38" value="UI展示" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="EVVN6Cf9p_QMSt45fL2O-38" value="UI展示" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="980" y="280" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="dN9uEu7a6YrC48BRAiv8-1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=-0.005;entryY=0.111;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="EVVN6Cf9p_QMSt45fL2O-3" target="EVVN6Cf9p_QMSt45fL2O-8">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="dN9uEu7a6YrC48BRAiv8-2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=-0.005;entryY=0.889;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="EVVN6Cf9p_QMSt45fL2O-27" target="EVVN6Cf9p_QMSt45fL2O-8">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="L8qdLZ1eqA9LcOyTU5ZC" name="11.6 风控业务接入和风险处置">
+    <mxGraphModel dx="1867" dy="780" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="0PGCndc_J5n0JWV6YUVB-3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.25;exitY=1;exitDx=0;exitDy=0;entryX=0.25;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="0PGCndc_J5n0JWV6YUVB-1" target="0PGCndc_J5n0JWV6YUVB-2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="0PGCndc_J5n0JWV6YUVB-1" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="80" y="100" width="300" height="410" as="geometry" />
+        </mxCell>
+        <mxCell id="0PGCndc_J5n0JWV6YUVB-4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.75;exitY=0;exitDx=0;exitDy=0;entryX=0.75;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="0PGCndc_J5n0JWV6YUVB-2" target="0PGCndc_J5n0JWV6YUVB-1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="0PGCndc_J5n0JWV6YUVB-2" value="&lt;font style=&quot;font-size: 24px;&quot;&gt;&lt;b&gt;风控处置模块&lt;/b&gt;&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="80" y="610" width="300" height="160" as="geometry" />
+        </mxCell>
+        <mxCell id="0PGCndc_J5n0JWV6YUVB-5" value="&lt;font style=&quot;font-size: 24px;&quot;&gt;&lt;b&gt;业务场景&lt;/b&gt;&lt;/font&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="140" y="120" width="200" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="0PGCndc_J5n0JWV6YUVB-7" value="&lt;font style=&quot;font-size: 18px;&quot;&gt;注册&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="140" y="170" width="190" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="0PGCndc_J5n0JWV6YUVB-8" value="&lt;font style=&quot;font-size: 18px;&quot;&gt;登录&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="140" y="250" width="190" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="0PGCndc_J5n0JWV6YUVB-9" value="&lt;font style=&quot;font-size: 18px;&quot;&gt;支付&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="140" y="340" width="190" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="0PGCndc_J5n0JWV6YUVB-10" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="580" y="100" width="250" height="660" as="geometry" />
+        </mxCell>
+        <mxCell id="0PGCndc_J5n0JWV6YUVB-11" value="&lt;font style=&quot;font-size: 24px;&quot;&gt;&lt;b&gt;风控接口服务&lt;/b&gt;&lt;/font&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="620" y="120" width="190" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="0PGCndc_J5n0JWV6YUVB-12" value="&lt;span style=&quot;font-size: 18px;&quot;&gt;接口服务&lt;/span&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="610" y="180" width="190" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="0PGCndc_J5n0JWV6YUVB-13" value="&lt;span style=&quot;font-size: 18px;&quot;&gt;参数解析&lt;/span&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="610" y="420" width="190" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="0PGCndc_J5n0JWV6YUVB-14" value="&lt;span style=&quot;font-size: 18px;&quot;&gt;数据操作&lt;/span&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="620" y="650" width="190" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="0PGCndc_J5n0JWV6YUVB-18" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="0PGCndc_J5n0JWV6YUVB-15" target="0PGCndc_J5n0JWV6YUVB-14">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="0PGCndc_J5n0JWV6YUVB-15" value="&lt;font style=&quot;font-size: 18px;&quot;&gt;DB/缓存&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="940" y="595" width="210" height="160" as="geometry" />
+        </mxCell>
+        <mxCell id="0PGCndc_J5n0JWV6YUVB-19" value="&lt;font style=&quot;font-size: 18px;&quot;&gt;数据&lt;/font&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="860" y="640" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="0PGCndc_J5n0JWV6YUVB-20" value="&lt;font style=&quot;font-size: 18px;&quot;&gt;加载&lt;/font&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="860" y="680" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="0PGCndc_J5n0JWV6YUVB-24" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="0PGCndc_J5n0JWV6YUVB-21" target="0PGCndc_J5n0JWV6YUVB-15">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="0PGCndc_J5n0JWV6YUVB-21" value="&lt;font style=&quot;font-size: 18px;&quot;&gt;风控规则引擎&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="940" y="100" width="210" height="160" as="geometry" />
+        </mxCell>
+        <mxCell id="0PGCndc_J5n0JWV6YUVB-25" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0.006;entryY=0.656;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="0PGCndc_J5n0JWV6YUVB-12" target="0PGCndc_J5n0JWV6YUVB-21">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="0PGCndc_J5n0JWV6YUVB-26" value="&lt;font style=&quot;font-size: 18px;&quot;&gt;规则&lt;/font&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="850" y="170" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="0PGCndc_J5n0JWV6YUVB-27" value="&lt;font style=&quot;font-size: 18px;&quot;&gt;加载&lt;/font&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="850" y="210" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="0PGCndc_J5n0JWV6YUVB-31" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.25;exitDx=0;exitDy=0;entryX=-0.015;entryY=0.157;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="0PGCndc_J5n0JWV6YUVB-1" target="0PGCndc_J5n0JWV6YUVB-10">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="0PGCndc_J5n0JWV6YUVB-32" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.25;exitDx=0;exitDy=0;entryX=1;entryY=0.402;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="580" y="370.18" as="sourcePoint" />
+            <mxPoint x="380" y="370.00000000000017" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="0PGCndc_J5n0JWV6YUVB-33" value="&lt;font style=&quot;font-size: 18px;&quot;&gt;请求&lt;/font&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="450" y="170" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="0PGCndc_J5n0JWV6YUVB-34" value="&lt;span style=&quot;font-size: 18px;&quot;&gt;响应&lt;/span&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="450" y="340" width="60" height="30" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
