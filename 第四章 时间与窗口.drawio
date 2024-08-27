@@ -40,8 +40,8 @@
         <mxCell id="BvsdqlHEoa5w_EsFs4Y4-64" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="BvsdqlHEoa5w_EsFs4Y4-65" target="BvsdqlHEoa5w_EsFs4Y4-68">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="BvsdqlHEoa5w_EsFs4Y4-65" value="&lt;h2&gt;&lt;font style=&quot;font-size: 18px;&quot;&gt;&lt;b&gt;4.6 窗口实现-执行时算子是WindowOperator(WindowedStream#reduce方法可以看出)（两套：Flink-streaming-java和flink-table-runtime-blink）&lt;/b&gt;&lt;/font&gt;&lt;/h2&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="184" y="761" width="439" height="115" as="geometry" />
+        <mxCell id="BvsdqlHEoa5w_EsFs4Y4-65" value="&lt;h2&gt;&lt;font style=&quot;font-size: 18px;&quot;&gt;&lt;b&gt;4.6 窗口实现 执行时算子是WindowOperator-WindowedStream#reduce方法可以看出（两套：Flink-streaming-java和flink-table-runtime-blink）&lt;/b&gt;&lt;/font&gt;&lt;/h2&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="369" y="754" width="439" height="115" as="geometry" />
         </mxCell>
         <mxCell id="BvsdqlHEoa5w_EsFs4Y4-77" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="BvsdqlHEoa5w_EsFs4Y4-66" target="BvsdqlHEoa5w_EsFs4Y4-76">
           <mxGeometry relative="1" as="geometry" />
@@ -55,14 +55,26 @@
         <mxCell id="BvsdqlHEoa5w_EsFs4Y4-85" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="BvsdqlHEoa5w_EsFs4Y4-66" target="BvsdqlHEoa5w_EsFs4Y4-74">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="BvsdqlHEoa5w_EsFs4Y4-66" value="&lt;span style=&quot;font-size: 14px;&quot;&gt;TimeWindow（测试代码：&lt;/span&gt;&lt;span style=&quot;font-family: &amp;quot;JetBrains Mono&amp;quot;, monospace; font-size: 10.5pt; background-color: initial;&quot;&gt;HourlyTipsSolution.java&lt;/span&gt;&lt;span style=&quot;font-size: 14px; background-color: initial;&quot;&gt;）&lt;/span&gt;&lt;br&gt;&lt;div&gt;&lt;span style=&quot;font-size: 14px;&quot;&gt;①断点源码中怎么把一个元素放到哪个窗口：WindowOperator#&lt;/span&gt;&lt;span style=&quot;color: rgb(0, 98, 122); font-family: &amp;quot;JetBrains Mono&amp;quot;, monospace; font-size: 10.5pt; background-color: initial;&quot;&gt;processElement(StreamRecord）下&lt;/span&gt;&lt;span style=&quot;font-family: &amp;quot;JetBrains Mono&amp;quot;, monospace; font-size: 10.5pt; background-color: initial; color: rgb(135, 16, 148);&quot;&gt;windowAssigner#&lt;/span&gt;&lt;span style=&quot;color: rgb(8, 8, 8); font-family: &amp;quot;JetBrains Mono&amp;quot;, monospace; font-size: 10.5pt; background-color: initial;&quot;&gt;assignWindows&lt;/span&gt;&lt;br&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="1">
+        <mxCell id="BvsdqlHEoa5w_EsFs4Y4-66" value="&lt;font style=&quot;font-size: 14px;&quot;&gt;&lt;b&gt;&lt;font color=&quot;#ff3333&quot;&gt;TimeWindow&lt;/font&gt;（测试代码：&lt;span style=&quot;font-family: &amp;quot;JetBrains Mono&amp;quot;, monospace; background-color: initial;&quot;&gt;HourlyTipsSolution.java&lt;/span&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;）&lt;/span&gt;&lt;br&gt;&lt;/b&gt;&lt;/font&gt;&lt;div&gt;&lt;font size=&quot;3&quot;&gt;&lt;b&gt;①断点源码中怎么把一个元素放到哪个窗口：WindowOperator#&lt;span style=&quot;color: rgb(0, 98, 122); font-family: &amp;quot;JetBrains Mono&amp;quot;, monospace; background-color: initial;&quot;&gt;processElement(StreamRecord）下&lt;/span&gt;&lt;span style=&quot;font-family: &amp;quot;JetBrains Mono&amp;quot;, monospace; background-color: initial; color: rgb(135, 16, 148);&quot;&gt;windowAssigner#&lt;/span&gt;&lt;span style=&quot;color: rgb(8, 8, 8); font-family: &amp;quot;JetBrains Mono&amp;quot;, monospace; background-color: initial;&quot;&gt;assignWindows&lt;/span&gt;&lt;/b&gt;&lt;/font&gt;&lt;br&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="1">
           <mxGeometry x="-327" y="1048" width="449" height="155" as="geometry" />
         </mxCell>
-        <mxCell id="BvsdqlHEoa5w_EsFs4Y4-67" value="&lt;font face=&quot;JetBrains Mono, monospace&quot;&gt;&lt;span style=&quot;font-size: 14px;&quot;&gt;CountWindow(两套实现不一样)&lt;/span&gt;&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="1">
-          <mxGeometry x="681" y="1040" width="327" height="152" as="geometry" />
+        <mxCell id="BvsdqlHEoa5w_EsFs4Y4-67" value="&lt;font face=&quot;JetBrains Mono, monospace&quot;&gt;&lt;span style=&quot;font-size: 14px;&quot;&gt;CountWindow(两套实现不一样)&lt;/span&gt;&lt;/font&gt;&lt;div&gt;&lt;font face=&quot;JetBrains Mono, monospace&quot;&gt;&lt;span style=&quot;font-size: 14px;&quot;&gt;①定义globalWindows然后使用trigger触发&lt;/span&gt;&lt;/font&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="1">
+          <mxGeometry x="1025" y="1048" width="327" height="152" as="geometry" />
         </mxCell>
-        <mxCell id="BvsdqlHEoa5w_EsFs4Y4-68" value="&lt;div&gt;&lt;span style=&quot;font-size: 14px;&quot;&gt;SessionWindow&lt;/span&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="1">
-          <mxGeometry x="236" y="1038" width="335" height="153" as="geometry" />
+        <mxCell id="BvsdqlHEoa5w_EsFs4Y4-90" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="BvsdqlHEoa5w_EsFs4Y4-68" target="BvsdqlHEoa5w_EsFs4Y4-89">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="BvsdqlHEoa5w_EsFs4Y4-92" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="BvsdqlHEoa5w_EsFs4Y4-68" target="BvsdqlHEoa5w_EsFs4Y4-91">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="BvsdqlHEoa5w_EsFs4Y4-95" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="BvsdqlHEoa5w_EsFs4Y4-68" target="BvsdqlHEoa5w_EsFs4Y4-93">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="BvsdqlHEoa5w_EsFs4Y4-96" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="BvsdqlHEoa5w_EsFs4Y4-68" target="BvsdqlHEoa5w_EsFs4Y4-94">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="BvsdqlHEoa5w_EsFs4Y4-68" value="&lt;div&gt;&lt;b&gt;&lt;font style=&quot;font-size: 14px;&quot;&gt;&lt;font color=&quot;#ff3333&quot;&gt;SessionWindow&lt;/font&gt;（测试代码参见：&lt;span style=&quot;font-family: &amp;quot;JetBrains Mono&amp;quot;, monospace; background-color: initial;&quot;&gt;SessionWindow.java&lt;/span&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;）&lt;/span&gt;&lt;/font&gt;&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;&lt;font style=&quot;font-size: 14px;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;①窗口合并涉及到窗口合并、State合并、触发器合并。&lt;/span&gt;&lt;/font&gt;&lt;/b&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="1">
+          <mxGeometry x="382.5" y="1054" width="412" height="153" as="geometry" />
         </mxCell>
         <mxCell id="BvsdqlHEoa5w_EsFs4Y4-74" value="处理时间窗口" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="-658" y="1038" width="120" height="60" as="geometry" />
@@ -71,19 +83,31 @@
           <mxGeometry x="-658" y="1147" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="BvsdqlHEoa5w_EsFs4Y4-78" value="&lt;font style=&quot;font-size: 14px;&quot;&gt;滚动窗口（TumblingWindow）:&lt;/font&gt;&lt;div&gt;&lt;span style=&quot;font-size: 14px;&quot;&gt;①Offset和Size&lt;/span&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="1">
-          <mxGeometry x="-420" y="1327" width="198" height="66" as="geometry" />
+          <mxGeometry x="-327" y="1327" width="198" height="66" as="geometry" />
         </mxCell>
         <mxCell id="BvsdqlHEoa5w_EsFs4Y4-80" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.75;exitDx=0;exitDy=0;entryX=1;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="BvsdqlHEoa5w_EsFs4Y4-78" target="BvsdqlHEoa5w_EsFs4Y4-78">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="BvsdqlHEoa5w_EsFs4Y4-81" value="&lt;font style=&quot;font-size: 14px;&quot;&gt;滑动窗口（SlidingWindow）&lt;/font&gt;&lt;div&gt;&lt;span style=&quot;font-size: 14px;&quot;&gt;①Offset、size和Slide&lt;/span&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="1">
-          <mxGeometry x="4" y="1327" width="199" height="63" as="geometry" />
+          <mxGeometry x="-77" y="1327" width="199" height="63" as="geometry" />
         </mxCell>
         <mxCell id="BvsdqlHEoa5w_EsFs4Y4-86" value="时间分类" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
           <mxGeometry x="-420" y="1090" width="60" height="30" as="geometry" />
         </mxCell>
         <mxCell id="BvsdqlHEoa5w_EsFs4Y4-87" value="窗口行为" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
           <mxGeometry x="-87" y="1219" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="BvsdqlHEoa5w_EsFs4Y4-89" value="&lt;span style=&quot;font-size: 14px;&quot;&gt;ProcessingTimeSessionWindows（使用固定会话时长）&lt;/span&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="1">
+          <mxGeometry x="140" y="1328.5" width="214" height="61.5" as="geometry" />
+        </mxCell>
+        <mxCell id="BvsdqlHEoa5w_EsFs4Y4-91" value="DynamicProcessingTimeSessionWindows&lt;span style=&quot;font-size: 14px; text-align: left;&quot;&gt;（使用自定义会话时长）&lt;/span&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="372" y="1330" width="223" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="BvsdqlHEoa5w_EsFs4Y4-93" value="EventTimeSessionWindows&lt;span style=&quot;font-size: 14px; text-align: left;&quot;&gt;（使用固定会话时长）&lt;/span&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="606" y="1330" width="223" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="BvsdqlHEoa5w_EsFs4Y4-94" value="DynamicEventTimeSessionWindows&lt;span style=&quot;font-size: 14px; text-align: left;&quot;&gt;（使用自定义会话时长）&lt;/span&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="840" y="1330" width="223" height="60" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
