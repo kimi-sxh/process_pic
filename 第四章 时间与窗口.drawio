@@ -1,6 +1,6 @@
 <mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Safari/537.36" border="50" scale="3" compressed="false" locked="false" version="24.7.7">
   <diagram name="Blank" id="YmL12bMKpDGza6XwsDPr">
-    <mxGraphModel dx="6533" dy="2360" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="827" pageHeight="1169" background="none" math="1" shadow="0">
+    <mxGraphModel dx="5636" dy="1651" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="827" pageHeight="1169" background="none" math="1" shadow="0">
       <root>
         <mxCell id="X5NqExCQtvZxIxQ7pmgY-0" />
         <mxCell id="1" parent="X5NqExCQtvZxIxQ7pmgY-0" />
@@ -40,8 +40,8 @@
         <mxCell id="BvsdqlHEoa5w_EsFs4Y4-64" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="BvsdqlHEoa5w_EsFs4Y4-65" target="BvsdqlHEoa5w_EsFs4Y4-68">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="BvsdqlHEoa5w_EsFs4Y4-65" value="&lt;h2&gt;&lt;font style=&quot;font-size: 18px;&quot;&gt;&lt;b&gt;4.6 窗口实现 执行时算子是WindowOperator-WindowedStream#reduce方法可以看出（两套：Flink-streaming-java和flink-table-runtime-blink）&lt;/b&gt;&lt;/font&gt;&lt;/h2&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="369" y="754" width="439" height="115" as="geometry" />
+        <mxCell id="BvsdqlHEoa5w_EsFs4Y4-65" value="&lt;h2&gt;&lt;font style=&quot;font-size: 24px;&quot;&gt;&lt;font style=&quot;&quot; color=&quot;#ff3333&quot;&gt;4.6 窗口实现&lt;/font&gt;&lt;b style=&quot;&quot;&gt; 执行时算子是WindowOperator-WindowedStream#reduce方法可以看出（两套：Flink-streaming-java和flink-table-runtime-blink）&lt;/b&gt;&lt;/font&gt;&lt;/h2&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="291" y="723" width="517" height="146" as="geometry" />
         </mxCell>
         <mxCell id="BvsdqlHEoa5w_EsFs4Y4-77" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="BvsdqlHEoa5w_EsFs4Y4-66" target="BvsdqlHEoa5w_EsFs4Y4-76">
           <mxGeometry relative="1" as="geometry" />
@@ -148,7 +148,13 @@
         <mxCell id="BvsdqlHEoa5w_EsFs4Y4-118" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="BvsdqlHEoa5w_EsFs4Y4-111" target="BvsdqlHEoa5w_EsFs4Y4-115">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="BvsdqlHEoa5w_EsFs4Y4-111" value="&lt;h2&gt;数据进入WindowAssigner(&lt;font style=&quot;font-weight: normal;&quot; color=&quot;#ff3333&quot;&gt;决定元素放到哪个或那些窗口&lt;/font&gt;)&lt;/h2&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="BvsdqlHEoa5w_EsFs4Y4-130" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="BvsdqlHEoa5w_EsFs4Y4-111" target="BvsdqlHEoa5w_EsFs4Y4-128">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="BvsdqlHEoa5w_EsFs4Y4-131" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="BvsdqlHEoa5w_EsFs4Y4-111" target="BvsdqlHEoa5w_EsFs4Y4-129">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="BvsdqlHEoa5w_EsFs4Y4-111" value="&lt;h2&gt;数据进入WindowAssigner(&lt;font style=&quot;font-weight: normal;&quot; color=&quot;#ff3333&quot;&gt;决定元素放到哪个或那些窗口&lt;/font&gt;)-参见4.6&lt;/h2&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="-2200" y="-490" width="439" height="115" as="geometry" />
         </mxCell>
         <mxCell id="BvsdqlHEoa5w_EsFs4Y4-117" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="BvsdqlHEoa5w_EsFs4Y4-115" target="BvsdqlHEoa5w_EsFs4Y4-116">
@@ -160,6 +166,24 @@
         <mxCell id="BvsdqlHEoa5w_EsFs4Y4-120" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="BvsdqlHEoa5w_EsFs4Y4-116" target="BvsdqlHEoa5w_EsFs4Y4-119">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
+        <mxCell id="BvsdqlHEoa5w_EsFs4Y4-134" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="BvsdqlHEoa5w_EsFs4Y4-116" target="BvsdqlHEoa5w_EsFs4Y4-133">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="BvsdqlHEoa5w_EsFs4Y4-139" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="BvsdqlHEoa5w_EsFs4Y4-116" target="BvsdqlHEoa5w_EsFs4Y4-136">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="BvsdqlHEoa5w_EsFs4Y4-140" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="BvsdqlHEoa5w_EsFs4Y4-116" target="BvsdqlHEoa5w_EsFs4Y4-137">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="BvsdqlHEoa5w_EsFs4Y4-141" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="BvsdqlHEoa5w_EsFs4Y4-116" target="BvsdqlHEoa5w_EsFs4Y4-138">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="BvsdqlHEoa5w_EsFs4Y4-144" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="BvsdqlHEoa5w_EsFs4Y4-116" target="BvsdqlHEoa5w_EsFs4Y4-142">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="BvsdqlHEoa5w_EsFs4Y4-145" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="BvsdqlHEoa5w_EsFs4Y4-116" target="BvsdqlHEoa5w_EsFs4Y4-143">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
         <mxCell id="BvsdqlHEoa5w_EsFs4Y4-116" value="&lt;h2&gt;&lt;font color=&quot;#ff3333&quot;&gt;Trigger触发&lt;/font&gt;(每个窗口都有):每当有元素进入或者注册的定时器超时，Trigger都会被调用。来决定一个窗口的何时能被计算或清除&lt;/h2&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="-2200" y="-66" width="439" height="115" as="geometry" />
         </mxCell>
@@ -168,6 +192,51 @@
         </mxCell>
         <mxCell id="BvsdqlHEoa5w_EsFs4Y4-121" value="&lt;h2&gt;计算函数(reduceFunction,WindowFunction等等)收到窗口的元素后，&lt;font color=&quot;#ff3333&quot;&gt;计算窗口的结果值发送给下游Sink&lt;/font&gt;&lt;/h2&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="-2223" y="324" width="485" height="109" as="geometry" />
+        </mxCell>
+        <mxCell id="BvsdqlHEoa5w_EsFs4Y4-128" value="&lt;h2&gt;Streaming体系中的WindowAssigner&lt;/h2&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-1601" y="-575" width="439" height="115" as="geometry" />
+        </mxCell>
+        <mxCell id="BvsdqlHEoa5w_EsFs4Y4-129" value="&lt;h2&gt;Blink体系中的WindowAssigner&lt;/h2&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-1601" y="-401" width="439" height="115" as="geometry" />
+        </mxCell>
+        <mxCell id="BvsdqlHEoa5w_EsFs4Y4-133" value="&lt;h2&gt;Continue:不做任何操作&lt;/h2&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-1498" y="-216" width="439" height="115" as="geometry" />
+        </mxCell>
+        <mxCell id="BvsdqlHEoa5w_EsFs4Y4-135" value="触发结果" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="-1744" y="-62" width="96" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="BvsdqlHEoa5w_EsFs4Y4-136" value="&lt;h2&gt;Fire:触发计算（如果不清理窗口的元素会一直被计算）&lt;/h2&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-1498" y="-68" width="439" height="115" as="geometry" />
+        </mxCell>
+        <mxCell id="BvsdqlHEoa5w_EsFs4Y4-137" value="&lt;h2&gt;Purge:触发清理，移除窗口和窗口中的数据&lt;/h2&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-1498" y="75" width="439" height="115" as="geometry" />
+        </mxCell>
+        <mxCell id="BvsdqlHEoa5w_EsFs4Y4-138" value="&lt;h2&gt;FIRE_PURGE:触发计算+清理&lt;/h2&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-1498" y="212" width="439" height="115" as="geometry" />
+        </mxCell>
+        <mxCell id="BvsdqlHEoa5w_EsFs4Y4-149" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="BvsdqlHEoa5w_EsFs4Y4-142" target="BvsdqlHEoa5w_EsFs4Y4-146">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="BvsdqlHEoa5w_EsFs4Y4-150" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="BvsdqlHEoa5w_EsFs4Y4-142" target="BvsdqlHEoa5w_EsFs4Y4-147">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="BvsdqlHEoa5w_EsFs4Y4-151" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="BvsdqlHEoa5w_EsFs4Y4-142" target="BvsdqlHEoa5w_EsFs4Y4-148">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="BvsdqlHEoa5w_EsFs4Y4-142" value="&lt;h2&gt;Streaming体系中的Trigger类体系&lt;/h2&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-2789" y="-165" width="439" height="115" as="geometry" />
+        </mxCell>
+        <mxCell id="BvsdqlHEoa5w_EsFs4Y4-143" value="&lt;h2&gt;Blink体系中的Trigger类体系&lt;/h2&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-2789" y="9" width="439" height="115" as="geometry" />
+        </mxCell>
+        <mxCell id="BvsdqlHEoa5w_EsFs4Y4-146" value="&lt;h2&gt;基于数据记录个数的触发：CountTrigger&lt;/h2&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-3424" y="-316" width="439" height="115" as="geometry" />
+        </mxCell>
+        <mxCell id="BvsdqlHEoa5w_EsFs4Y4-147" value="&lt;h2&gt;基于处理时间的触发：ProcessingTimeTrigger&lt;/h2&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-3424" y="-165" width="439" height="115" as="geometry" />
+        </mxCell>
+        <mxCell id="BvsdqlHEoa5w_EsFs4Y4-148" value="&lt;h2&gt;基于事件时间的触发：使用Watermark机制触发。EventTimeTrigger 源码参见：#window（）方法进去WindowedStream里构建new&amp;nbsp;&lt;span style=&quot;font-family: &amp;quot;JetBrains Mono&amp;quot;, monospace; font-size: 10.5pt; background-color: initial;&quot;&gt;WindowOperatorBuilder有个默认触发器&lt;/span&gt;&lt;/h2&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-3421" y="-14" width="439" height="115" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
