@@ -202,6 +202,12 @@
         <mxCell id="BvsdqlHEoa5w_EsFs4Y4-119" value="&lt;h2&gt;Trigger触发后，窗口的元素会交给&lt;font style=&quot;&quot; color=&quot;#ff3333&quot;&gt;Evictor过滤&lt;/font&gt;&lt;/h2&gt;&lt;h2&gt;①指定的话：可以按照规则决定哪些元素放到函数里计算；&lt;/h2&gt;&lt;div&gt;&lt;font style=&quot;font-size: 18px;&quot;&gt;&lt;b&gt;②未指定的话：则窗口中的所有元素会一起交给函数计算&lt;/b&gt;&lt;/font&gt;&lt;/div&gt;&lt;div&gt;：&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="-2223" y="395" width="485" height="109" as="geometry" />
         </mxCell>
+        <mxCell id="BvsdqlHEoa5w_EsFs4Y4-160" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="BvsdqlHEoa5w_EsFs4Y4-121" target="BvsdqlHEoa5w_EsFs4Y4-159">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="BvsdqlHEoa5w_EsFs4Y4-163" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="BvsdqlHEoa5w_EsFs4Y4-121" target="BvsdqlHEoa5w_EsFs4Y4-161">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
         <mxCell id="BvsdqlHEoa5w_EsFs4Y4-121" value="&lt;h2&gt;计算函数(reduceFunction,WindowFunction等等)收到窗口的元素后，&lt;font color=&quot;#ff3333&quot;&gt;计算窗口的结果值发送给下游Sink&lt;/font&gt;&lt;/h2&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="-2223" y="621" width="485" height="109" as="geometry" />
         </mxCell>
@@ -250,14 +256,20 @@
         <mxCell id="BvsdqlHEoa5w_EsFs4Y4-148" value="&lt;h2&gt;基于事件时间的触发：使用Watermark机制触发。EventTimeTrigger 源码参见：#window（）方法进去WindowedStream里构建new&amp;nbsp;&lt;span style=&quot;font-family: &amp;quot;JetBrains Mono&amp;quot;, monospace; font-size: 10.5pt; background-color: initial;&quot;&gt;WindowOperatorBuilder有个默认触发器&lt;/span&gt;&lt;/h2&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="-3421" y="-14" width="439" height="115" as="geometry" />
         </mxCell>
-        <mxCell id="BvsdqlHEoa5w_EsFs4Y4-153" value="&lt;h2&gt;CountEvictor:在Window中保留指定数量的元&lt;/h2&gt;&lt;h2&gt;素，并从窗口头部开始丢弃其余元素。&lt;/h2&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="BvsdqlHEoa5w_EsFs4Y4-153" value="&lt;h2&gt;&lt;font color=&quot;#ff3333&quot;&gt;【CountEvictor】&lt;/font&gt;:在Window中保留指定数量的元&lt;/h2&gt;&lt;h2&gt;素，并从窗口头部开始丢弃其余元素。&lt;/h2&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="-2785" y="216" width="439" height="115" as="geometry" />
         </mxCell>
-        <mxCell id="BvsdqlHEoa5w_EsFs4Y4-155" value="&lt;h2&gt;DeltaEvictor: 阈值过滤器&lt;/h2&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="BvsdqlHEoa5w_EsFs4Y4-155" value="&lt;h2&gt;&lt;font color=&quot;#ff3333&quot;&gt;【DeltaEvictor】&lt;/font&gt;: 阈值过滤器&lt;/h2&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="-2789" y="392" width="439" height="115" as="geometry" />
         </mxCell>
-        <mxCell id="BvsdqlHEoa5w_EsFs4Y4-156" value="&lt;h2&gt;TimeEvictor: 时间过滤器。保留Window中最近一段时间内的元素，并丢弃其余元素&lt;/h2&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="-2789" y="550" width="439" height="115" as="geometry" />
+        <mxCell id="BvsdqlHEoa5w_EsFs4Y4-156" value="&lt;h2&gt;&lt;font color=&quot;#ff3333&quot;&gt;【TimeEvictor】&lt;/font&gt;: 时间过滤器。保留Window中最近一段时间内的元素，并丢弃其余元素&lt;/h2&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-2783" y="560" width="439" height="115" as="geometry" />
+        </mxCell>
+        <mxCell id="BvsdqlHEoa5w_EsFs4Y4-159" value="&lt;h2&gt;&lt;font color=&quot;#ff3333&quot;&gt;【增量计算函数】&lt;/font&gt;：增量计算指的是窗口保存一份中间数据，每流入一个新元素，新元素都会与中间数据两两合一，生成新的中间数据，再保存到窗口中。包含有ReduceFunction,AggregateFunction,FoldFunction&lt;/h2&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="1">
+          <mxGeometry x="-1555" y="554" width="643" height="129" as="geometry" />
+        </mxCell>
+        <mxCell id="BvsdqlHEoa5w_EsFs4Y4-161" value="&lt;h2&gt;&lt;font color=&quot;#ff3333&quot;&gt;【全量计算函数】&lt;/font&gt;：指的是先缓存该窗口的所有元素，等到触发条件后对窗口内的所有元素执行计算。如：ProcessWindowFunction&lt;/h2&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="1">
+          <mxGeometry x="-1555" y="690" width="633" height="111" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
