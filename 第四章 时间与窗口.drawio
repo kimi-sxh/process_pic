@@ -1,6 +1,6 @@
 <mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Safari/537.36" border="50" scale="3" compressed="false" locked="false" version="24.7.7">
   <diagram name="Blank" id="YmL12bMKpDGza6XwsDPr">
-    <mxGraphModel dx="2667" dy="780" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="827" pageHeight="1169" background="none" math="1" shadow="0">
+    <mxGraphModel dx="4118" dy="551" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="827" pageHeight="1169" background="none" math="1" shadow="0">
       <root>
         <mxCell id="X5NqExCQtvZxIxQ7pmgY-0" />
         <mxCell id="1" parent="X5NqExCQtvZxIxQ7pmgY-0" />
@@ -108,6 +108,42 @@
         </mxCell>
         <mxCell id="BvsdqlHEoa5w_EsFs4Y4-94" value="DynamicEventTimeSessionWindows&lt;span style=&quot;font-size: 14px; text-align: left;&quot;&gt;（使用自定义会话时长）&lt;/span&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="840" y="1330" width="223" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="BvsdqlHEoa5w_EsFs4Y4-97" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="BvsdqlHEoa5w_EsFs4Y4-100" target="BvsdqlHEoa5w_EsFs4Y4-101">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="-1581" y="383" as="targetPoint" />
+            <mxPoint x="-1336" y="323" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="BvsdqlHEoa5w_EsFs4Y4-98" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="BvsdqlHEoa5w_EsFs4Y4-100" target="BvsdqlHEoa5w_EsFs4Y4-102">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="BvsdqlHEoa5w_EsFs4Y4-99" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="BvsdqlHEoa5w_EsFs4Y4-100" target="BvsdqlHEoa5w_EsFs4Y4-103">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="BvsdqlHEoa5w_EsFs4Y4-100" value="&lt;h2&gt;&lt;font color=&quot;#ff3333&quot; style=&quot;font-size: 36px;&quot;&gt;&lt;b style=&quot;&quot;&gt;4.4 水印&lt;/b&gt;&lt;/font&gt;&lt;/h2&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-1558" y="33" width="439" height="115" as="geometry" />
+        </mxCell>
+        <mxCell id="BvsdqlHEoa5w_EsFs4Y4-105" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="BvsdqlHEoa5w_EsFs4Y4-101" target="BvsdqlHEoa5w_EsFs4Y4-104">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="BvsdqlHEoa5w_EsFs4Y4-107" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="BvsdqlHEoa5w_EsFs4Y4-101" target="BvsdqlHEoa5w_EsFs4Y4-106">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="BvsdqlHEoa5w_EsFs4Y4-101" value="&lt;font color=&quot;#ff3333&quot; style=&quot;font-size: 18px;&quot;&gt;DataStream里的watermark生成&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="1">
+          <mxGeometry x="-2306" y="310" width="335" height="150" as="geometry" />
+        </mxCell>
+        <mxCell id="BvsdqlHEoa5w_EsFs4Y4-102" value="&lt;font face=&quot;JetBrains Mono, monospace&quot;&gt;&lt;span style=&quot;font-size: 14px;&quot;&gt;【&lt;/span&gt;&lt;/font&gt;&lt;span style=&quot;font-size: 14px; font-family: &amp;quot;JetBrains Mono&amp;quot;, monospace; background-color: initial;&quot;&gt;优先级队列-PriorityQueue】：registerEventTimeTimer#registerEventTimeTimer&amp;nbsp;&lt;/span&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="1">
+          <mxGeometry x="-673" y="310" width="327" height="152" as="geometry" />
+        </mxCell>
+        <mxCell id="BvsdqlHEoa5w_EsFs4Y4-103" value="&lt;font style=&quot;font-size: 14px;&quot;&gt;【定时器-Timer】：&lt;/font&gt;&lt;div&gt;&lt;span style=&quot;font-size: 14px;&quot;&gt;如何触发：&lt;/span&gt;&lt;span style=&quot;background-color: initial; font-size: 14px;&quot;&gt;InternalTimerServiceImpl#advanceWatermark触发UDF的onTime()方法&lt;/span&gt;&lt;br&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="1">
+          <mxGeometry x="-1506" y="310" width="335" height="153" as="geometry" />
+        </mxCell>
+        <mxCell id="BvsdqlHEoa5w_EsFs4Y4-104" value="&lt;b&gt;&lt;font color=&quot;#ff3333&quot;&gt;Source Function中生成Watermark（SourceFunctionToWatermark.java）&lt;/font&gt;&lt;/b&gt;：&lt;div&gt;①直接为元素分配时间戳，同时向下游发送watermark。env#addSource(SourceFunction)中,调用&lt;span style=&quot;background-color: initial;&quot;&gt;SourceContext 中的&lt;/span&gt;&lt;/div&gt;&lt;div&gt;collectWithTimestamp（...）方法。为了生成Watermark，源需要调&lt;/div&gt;&lt;div&gt;用emitWatermark（Watermark）&lt;span style=&quot;background-color: initial;&quot;&gt;&amp;nbsp;&amp;nbsp;&lt;/span&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="1">
+          <mxGeometry x="-2571" y="552" width="427" height="97" as="geometry" />
+        </mxCell>
+        <mxCell id="BvsdqlHEoa5w_EsFs4Y4-106" value="&lt;font color=&quot;#ff3333&quot;&gt;&lt;b&gt;DataStream API中生成（参见：&lt;span style=&quot;font-family: &amp;quot;JetBrains Mono&amp;quot;, monospace; font-size: 10.5pt; background-color: initial;&quot;&gt;SmsInfoJob.java&lt;/span&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;）&lt;/span&gt;&lt;/b&gt;&lt;/font&gt;&lt;br&gt;&lt;div&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;&lt;b style=&quot;&quot;&gt;fromSource()其中watermarkStrategy-TimestampAssigner和WatermarkGenerator结合)指定时间和水印&lt;/b&gt;&lt;br&gt;&lt;/span&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="1">
+          <mxGeometry x="-2104" y="552" width="427" height="97" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
