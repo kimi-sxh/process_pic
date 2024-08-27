@@ -1,13 +1,13 @@
 <mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Safari/537.36" border="50" scale="3" compressed="false" locked="false" version="24.7.7">
   <diagram name="Blank" id="YmL12bMKpDGza6XwsDPr">
-    <mxGraphModel dx="4667" dy="780" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="827" pageHeight="1169" background="none" math="1" shadow="0">
+    <mxGraphModel dx="6533" dy="2360" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="827" pageHeight="1169" background="none" math="1" shadow="0">
       <root>
         <mxCell id="X5NqExCQtvZxIxQ7pmgY-0" />
         <mxCell id="1" parent="X5NqExCQtvZxIxQ7pmgY-0" />
         <mxCell id="BvsdqlHEoa5w_EsFs4Y4-4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="BvsdqlHEoa5w_EsFs4Y4-8" target="BvsdqlHEoa5w_EsFs4Y4-11">
           <mxGeometry relative="1" as="geometry">
-            <mxPoint x="180" y="410" as="targetPoint" />
-            <mxPoint x="425" y="350" as="sourcePoint" />
+            <mxPoint x="-2053" y="1183" as="targetPoint" />
+            <mxPoint x="-1808" y="1123" as="sourcePoint" />
           </mxGeometry>
         </mxCell>
         <mxCell id="BvsdqlHEoa5w_EsFs4Y4-51" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="BvsdqlHEoa5w_EsFs4Y4-8" target="BvsdqlHEoa5w_EsFs4Y4-13">
@@ -17,16 +17,16 @@
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="BvsdqlHEoa5w_EsFs4Y4-8" value="&lt;h2&gt;&lt;font style=&quot;font-size: 18px;&quot;&gt;&lt;b&gt;4.5 时间服务-&lt;/b&gt;&lt;/font&gt;&lt;span style=&quot;font-size: 18px;&quot;&gt;&lt;b&gt;参见：LongRidesSolution.java 如根据事件时间（驾驶时间）超过两小时就告警&lt;/b&gt;&lt;/span&gt;&lt;/h2&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="203" y="60" width="439" height="115" as="geometry" />
+          <mxGeometry x="-2030" y="833" width="439" height="115" as="geometry" />
         </mxCell>
         <mxCell id="BvsdqlHEoa5w_EsFs4Y4-11" value="&lt;font style=&quot;font-size: 14px;&quot;&gt;【定时器服务-TimerService】：&lt;/font&gt;&lt;div&gt;&lt;font style=&quot;font-size: 14px;&quot;&gt;①窗口算子WindowOperator使用InternalTimerService来管理定时器（Timer）,&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font style=&quot;font-size: 14px;&quot;&gt;②初始化在open方法中实现。&lt;/font&gt;&lt;div&gt;&lt;font style=&quot;font-size: 14px;&quot;&gt;③UDF方法中获取：XXXOperator内部类Context#timerService()&lt;/font&gt;&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;font style=&quot;font-size: 14px;&quot;&gt;④就可以注册&lt;/font&gt;&lt;span style=&quot;color: rgb(8, 8, 8); font-family: &amp;quot;JetBrains Mono&amp;quot;, monospace; font-size: 10.5pt; background-color: initial;&quot;&gt;registerEventTimeTimer，删除&lt;/span&gt;&lt;span style=&quot;color: rgb(8, 8, 8); font-family: &amp;quot;JetBrains Mono&amp;quot;, monospace; font-size: 10.5pt; background-color: initial;&quot;&gt;deleteEventTimeTimerd等等操作&lt;/span&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="1">
-          <mxGeometry x="-215" y="341" width="335" height="150" as="geometry" />
+          <mxGeometry x="-2448" y="1114" width="335" height="150" as="geometry" />
         </mxCell>
         <mxCell id="BvsdqlHEoa5w_EsFs4Y4-13" value="&lt;font face=&quot;JetBrains Mono, monospace&quot;&gt;&lt;span style=&quot;font-size: 14px;&quot;&gt;【&lt;/span&gt;&lt;/font&gt;&lt;span style=&quot;font-size: 14px; font-family: &amp;quot;JetBrains Mono&amp;quot;, monospace; background-color: initial;&quot;&gt;优先级队列-PriorityQueue】：registerEventTimeTimer#registerEventTimeTimer&amp;nbsp;&lt;/span&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="1">
-          <mxGeometry x="700" y="339" width="327" height="152" as="geometry" />
+          <mxGeometry x="-1533" y="1112" width="327" height="152" as="geometry" />
         </mxCell>
         <mxCell id="BvsdqlHEoa5w_EsFs4Y4-53" value="&lt;font style=&quot;font-size: 14px;&quot;&gt;【定时器-Timer】：&lt;/font&gt;&lt;div&gt;&lt;span style=&quot;font-size: 14px;&quot;&gt;如何触发：&lt;/span&gt;&lt;span style=&quot;background-color: initial; font-size: 14px;&quot;&gt;InternalTimerServiceImpl#advanceWatermark触发UDF的onTime()方法&lt;/span&gt;&lt;br&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="1">
-          <mxGeometry x="255" y="337" width="335" height="153" as="geometry" />
+          <mxGeometry x="-1978" y="1110" width="335" height="153" as="geometry" />
         </mxCell>
         <mxCell id="BvsdqlHEoa5w_EsFs4Y4-62" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="BvsdqlHEoa5w_EsFs4Y4-65" target="BvsdqlHEoa5w_EsFs4Y4-66">
           <mxGeometry relative="1" as="geometry">
@@ -111,8 +111,8 @@
         </mxCell>
         <mxCell id="BvsdqlHEoa5w_EsFs4Y4-97" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="BvsdqlHEoa5w_EsFs4Y4-100" target="BvsdqlHEoa5w_EsFs4Y4-101">
           <mxGeometry relative="1" as="geometry">
-            <mxPoint x="-1581" y="383" as="targetPoint" />
-            <mxPoint x="-1336" y="323" as="sourcePoint" />
+            <mxPoint x="266" y="143" as="targetPoint" />
+            <mxPoint x="511" y="83" as="sourcePoint" />
           </mxGeometry>
         </mxCell>
         <mxCell id="BvsdqlHEoa5w_EsFs4Y4-98" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="BvsdqlHEoa5w_EsFs4Y4-100" target="BvsdqlHEoa5w_EsFs4Y4-102">
@@ -122,7 +122,7 @@
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="BvsdqlHEoa5w_EsFs4Y4-100" value="&lt;h2&gt;&lt;font color=&quot;#ff3333&quot; style=&quot;font-size: 36px;&quot;&gt;&lt;b style=&quot;&quot;&gt;4.4 水印&lt;/b&gt;&lt;/font&gt;&lt;/h2&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="-1558" y="33" width="439" height="115" as="geometry" />
+          <mxGeometry x="289" y="-207" width="439" height="115" as="geometry" />
         </mxCell>
         <mxCell id="BvsdqlHEoa5w_EsFs4Y4-105" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="BvsdqlHEoa5w_EsFs4Y4-101" target="BvsdqlHEoa5w_EsFs4Y4-104">
           <mxGeometry relative="1" as="geometry" />
@@ -131,19 +131,43 @@
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="BvsdqlHEoa5w_EsFs4Y4-101" value="&lt;font color=&quot;#ff3333&quot; style=&quot;font-size: 18px;&quot;&gt;DataStream里的watermark生成&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="1">
-          <mxGeometry x="-2306" y="310" width="335" height="150" as="geometry" />
+          <mxGeometry x="-459" y="70" width="335" height="150" as="geometry" />
         </mxCell>
         <mxCell id="BvsdqlHEoa5w_EsFs4Y4-102" value="&lt;font color=&quot;#ff3333&quot; face=&quot;JetBrains Mono, monospace&quot;&gt;&lt;span style=&quot;font-size: 14px;&quot;&gt;&lt;b&gt;多流的watermark&lt;/b&gt;&lt;/span&gt;&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="1">
-          <mxGeometry x="-673" y="310" width="327" height="152" as="geometry" />
+          <mxGeometry x="1174" y="70" width="327" height="152" as="geometry" />
         </mxCell>
         <mxCell id="BvsdqlHEoa5w_EsFs4Y4-103" value="&lt;div&gt;&lt;span style=&quot;font-size: 14px;&quot;&gt;&lt;font color=&quot;#ff3333&quot;&gt;&lt;b&gt;Flink SQL的Watermark&lt;/b&gt;&lt;/font&gt;&lt;/span&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="1">
-          <mxGeometry x="-1506" y="310" width="335" height="153" as="geometry" />
+          <mxGeometry x="341" y="70" width="335" height="153" as="geometry" />
         </mxCell>
         <mxCell id="BvsdqlHEoa5w_EsFs4Y4-104" value="&lt;b&gt;&lt;font color=&quot;#ff3333&quot;&gt;Source Function中生成Watermark（SourceFunctionToWatermark.java）&lt;/font&gt;&lt;/b&gt;：&lt;div&gt;①直接为元素分配时间戳，同时向下游发送watermark。env#addSource(SourceFunction)中,调用&lt;span style=&quot;background-color: initial;&quot;&gt;SourceContext 中的&lt;/span&gt;&lt;/div&gt;&lt;div&gt;collectWithTimestamp（...）方法。为了生成Watermark，源需要调&lt;/div&gt;&lt;div&gt;用emitWatermark（Watermark）&lt;span style=&quot;background-color: initial;&quot;&gt;&amp;nbsp;&amp;nbsp;&lt;/span&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="1">
-          <mxGeometry x="-2571" y="552" width="427" height="97" as="geometry" />
+          <mxGeometry x="-724" y="312" width="427" height="97" as="geometry" />
         </mxCell>
         <mxCell id="BvsdqlHEoa5w_EsFs4Y4-106" value="&lt;font color=&quot;#ff3333&quot;&gt;&lt;b&gt;DataStream API中生成（参见：&lt;span style=&quot;font-family: &amp;quot;JetBrains Mono&amp;quot;, monospace; font-size: 10.5pt; background-color: initial;&quot;&gt;SmsInfoJob.java&lt;/span&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;）&lt;/span&gt;&lt;/b&gt;&lt;/font&gt;&lt;br&gt;&lt;div&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;&lt;b style=&quot;&quot;&gt;fromSource()其中watermarkStrategy-TimestampAssigner和WatermarkGenerator结合)指定时间和水印&lt;/b&gt;&lt;br&gt;&lt;/span&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="1">
-          <mxGeometry x="-2104" y="552" width="427" height="97" as="geometry" />
+          <mxGeometry x="-257" y="312" width="427" height="97" as="geometry" />
+        </mxCell>
+        <mxCell id="BvsdqlHEoa5w_EsFs4Y4-118" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="BvsdqlHEoa5w_EsFs4Y4-111" target="BvsdqlHEoa5w_EsFs4Y4-115">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="BvsdqlHEoa5w_EsFs4Y4-111" value="&lt;h2&gt;数据进入WindowAssigner(&lt;font style=&quot;font-weight: normal;&quot; color=&quot;#ff3333&quot;&gt;决定元素放到哪个或那些窗口&lt;/font&gt;)&lt;/h2&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-2200" y="-490" width="439" height="115" as="geometry" />
+        </mxCell>
+        <mxCell id="BvsdqlHEoa5w_EsFs4Y4-117" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="BvsdqlHEoa5w_EsFs4Y4-115" target="BvsdqlHEoa5w_EsFs4Y4-116">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="BvsdqlHEoa5w_EsFs4Y4-115" value="&lt;h2&gt;Window只是一个标识（元数据，开始时间和结束时间但是不会存储窗口里的数据。窗口中的元素实际是key/value state,key为window,value为数据集合-聚合值）&lt;/h2&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-2200" y="-270" width="439" height="115" as="geometry" />
+        </mxCell>
+        <mxCell id="BvsdqlHEoa5w_EsFs4Y4-120" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="BvsdqlHEoa5w_EsFs4Y4-116" target="BvsdqlHEoa5w_EsFs4Y4-119">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="BvsdqlHEoa5w_EsFs4Y4-116" value="&lt;h2&gt;&lt;font color=&quot;#ff3333&quot;&gt;Trigger触发&lt;/font&gt;(每个窗口都有):每当有元素进入或者注册的定时器超时，Trigger都会被调用。来决定一个窗口的何时能被计算或清除&lt;/h2&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-2200" y="-66" width="439" height="115" as="geometry" />
+        </mxCell>
+        <mxCell id="BvsdqlHEoa5w_EsFs4Y4-119" value="&lt;h2&gt;Trigger触发后，窗口的元素会交给&lt;font style=&quot;&quot; color=&quot;#ff3333&quot;&gt;Evictor过滤&lt;/font&gt;&lt;/h2&gt;&lt;h2&gt;①指定的话：可以按照规则决定哪些元素放到函数里计算；&lt;/h2&gt;&lt;div&gt;&lt;font style=&quot;font-size: 18px;&quot;&gt;&lt;b&gt;②未指定的话：则窗口中的所有元素会一起交给函数计算&lt;/b&gt;&lt;/font&gt;&lt;/div&gt;&lt;div&gt;：&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-2223" y="138" width="485" height="109" as="geometry" />
+        </mxCell>
+        <mxCell id="BvsdqlHEoa5w_EsFs4Y4-121" value="&lt;h2&gt;计算函数(reduceFunction,WindowFunction等等)收到窗口的元素后，&lt;font color=&quot;#ff3333&quot;&gt;计算窗口的结果值发送给下游Sink&lt;/font&gt;&lt;/h2&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-2223" y="324" width="485" height="109" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
