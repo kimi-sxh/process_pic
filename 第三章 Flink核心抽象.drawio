@@ -1,12 +1,12 @@
 <mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Safari/537.36" version="24.7.7">
   <diagram name="Page-1" id="b98fa263-6416-c6ec-5b7d-78bf54ef71d0">
-    <mxGraphModel dx="2800" dy="1170" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1.5" pageWidth="1654" pageHeight="1169" background="none" math="0" shadow="0">
+    <mxGraphModel dx="4480" dy="1872" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1.5" pageWidth="2339" pageHeight="3300" background="none" math="0" shadow="0">
       <root>
         <mxCell id="0" style=";html=1;" />
         <mxCell id="1" style=";html=1;" parent="0" />
         <mxCell id="aMiYXr5Bl79WTztZy76K-6" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" parent="1" source="aMiYXr5Bl79WTztZy76K-1" target="aMiYXr5Bl79WTztZy76K-7" edge="1">
           <mxGeometry relative="1" as="geometry">
-            <mxPoint x="180" y="410" as="targetPoint" />
+            <mxPoint x="2770" y="930" as="targetPoint" />
           </mxGeometry>
         </mxCell>
         <mxCell id="aMiYXr5Bl79WTztZy76K-9" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" parent="1" source="aMiYXr5Bl79WTztZy76K-1" target="aMiYXr5Bl79WTztZy76K-8" edge="1">
@@ -14,36 +14,36 @@
         </mxCell>
         <mxCell id="aMiYXr5Bl79WTztZy76K-11" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="aMiYXr5Bl79WTztZy76K-1" target="aMiYXr5Bl79WTztZy76K-12" edge="1">
           <mxGeometry relative="1" as="geometry">
-            <mxPoint x="690" y="490" as="targetPoint" />
+            <mxPoint x="3280" y="1010" as="targetPoint" />
             <Array as="points">
-              <mxPoint x="425" y="420" />
-              <mxPoint x="705" y="420" />
+              <mxPoint x="3015" y="940" />
+              <mxPoint x="3295" y="940" />
             </Array>
           </mxGeometry>
         </mxCell>
         <mxCell id="aMiYXr5Bl79WTztZy76K-1" value="&lt;font style=&quot;font-size: 14px;&quot;&gt;运行时上下文RuntimeContext（让Function运行时能获取作业级别的信息）&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-          <mxGeometry x="310" y="250" width="230" height="100" as="geometry" />
+          <mxGeometry x="2900" y="770" width="230" height="100" as="geometry" />
         </mxCell>
         <mxCell id="aMiYXr5Bl79WTztZy76K-2" value="&lt;font style=&quot;font-size: 14px;&quot;&gt;RichFunction接口&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-          <mxGeometry x="310" y="60" width="230" height="100" as="geometry" />
+          <mxGeometry x="2900" y="580" width="230" height="100" as="geometry" />
         </mxCell>
         <mxCell id="aMiYXr5Bl79WTztZy76K-4" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="aMiYXr5Bl79WTztZy76K-2" target="aMiYXr5Bl79WTztZy76K-1" edge="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
-            <mxPoint x="420" y="170" as="sourcePoint" />
-            <mxPoint x="780" y="180" as="targetPoint" />
+            <mxPoint x="3010" y="690" as="sourcePoint" />
+            <mxPoint x="3370" y="700" as="targetPoint" />
           </mxGeometry>
         </mxCell>
         <mxCell id="aMiYXr5Bl79WTztZy76K-5" value="一对一" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
-          <mxGeometry x="430" y="190" width="60" height="30" as="geometry" />
+          <mxGeometry x="3020" y="710" width="60" height="30" as="geometry" />
         </mxCell>
         <mxCell id="aMiYXr5Bl79WTztZy76K-7" value="&lt;font style=&quot;font-size: 14px;&quot;&gt;StreamingRuntimeContext(流计算中)&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-          <mxGeometry x="10" y="490" width="190" height="80" as="geometry" />
+          <mxGeometry x="2600" y="1010" width="190" height="80" as="geometry" />
         </mxCell>
         <mxCell id="aMiYXr5Bl79WTztZy76K-8" value="&lt;font style=&quot;font-size: 14px;&quot;&gt;&lt;span style=&quot;background-color: rgb(255, 255, 255); font-family: &amp;quot;JetBrains Mono&amp;quot;, monospace; font-size: 10.5pt;&quot;&gt;DistributedRuntimeUDFContext&lt;/span&gt;(批处理中)&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-          <mxGeometry x="310" y="480" width="230" height="100" as="geometry" />
+          <mxGeometry x="2900" y="1000" width="230" height="100" as="geometry" />
         </mxCell>
         <mxCell id="aMiYXr5Bl79WTztZy76K-12" value="&lt;font face=&quot;JetBrains Mono, monospace&quot;&gt;&lt;span style=&quot;font-size: 14px; background-color: rgb(255, 255, 255);&quot;&gt;。。。&lt;/span&gt;&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-          <mxGeometry x="590" y="480" width="230" height="100" as="geometry" />
+          <mxGeometry x="3180" y="1000" width="230" height="100" as="geometry" />
         </mxCell>
         <mxCell id="aMiYXr5Bl79WTztZy76K-16" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" parent="1" source="aMiYXr5Bl79WTztZy76K-14" target="aMiYXr5Bl79WTztZy76K-15" edge="1">
           <mxGeometry relative="1" as="geometry" />
@@ -58,19 +58,19 @@
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="aMiYXr5Bl79WTztZy76K-14" value="&lt;font style=&quot;font-size: 14px;&quot;&gt;3.2 StreamElement数据流元素抽象类（执行时序列化为二进制，反序列化为对应类型）&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-          <mxGeometry x="1400" y="70" width="230" height="80" as="geometry" />
+          <mxGeometry x="2110" y="190" width="230" height="80" as="geometry" />
         </mxCell>
         <mxCell id="aMiYXr5Bl79WTztZy76K-15" value="&lt;font style=&quot;font-size: 14px;&quot;&gt;&lt;b&gt;StreamRecord&lt;/b&gt;(数据流中一条记录，包含数据本身及可选时间戳)&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-          <mxGeometry x="1040" y="310" width="190" height="80" as="geometry" />
+          <mxGeometry x="1750" y="430" width="190" height="80" as="geometry" />
         </mxCell>
         <mxCell id="aMiYXr5Bl79WTztZy76K-17" value="&lt;font style=&quot;font-size: 14px;&quot;&gt;LatencyMarker(评估延迟。包含周期算子创造出来的时间戳、算子编号、数据源算子所在的Task编号)&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-          <mxGeometry x="1280" y="310" width="190" height="80" as="geometry" />
+          <mxGeometry x="1990" y="430" width="190" height="80" as="geometry" />
         </mxCell>
         <mxCell id="aMiYXr5Bl79WTztZy76K-18" value="&lt;font style=&quot;font-size: 14px;&quot;&gt;Watermark(时间戳，代表所有算子时间早于等于watermark的事件都已经到达)&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-          <mxGeometry x="1540" y="310" width="190" height="80" as="geometry" />
+          <mxGeometry x="2250" y="430" width="190" height="80" as="geometry" />
         </mxCell>
         <mxCell id="aMiYXr5Bl79WTztZy76K-19" value="&lt;font style=&quot;font-size: 14px;&quot;&gt;StreamStatus(用来通知tasks是否会继续接收到上游的记录或者watermark。有两种状态一个是空闲idle,一个是活跃active)&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-          <mxGeometry x="1790" y="310" width="200" height="80" as="geometry" />
+          <mxGeometry x="2500" y="430" width="200" height="80" as="geometry" />
         </mxCell>
         <mxCell id="znwijTAoPct9jV0FG-Yg-4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="znwijTAoPct9jV0FG-Yg-1" target="znwijTAoPct9jV0FG-Yg-2">
           <mxGeometry relative="1" as="geometry" />
@@ -79,7 +79,7 @@
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="znwijTAoPct9jV0FG-Yg-1" value="&lt;font style=&quot;&quot;&gt;&lt;b style=&quot;font-size: 14px;&quot;&gt;3.3 数据转换Transformation(&lt;/b&gt;&lt;span style=&quot;font-size: 14px;&quot;&gt;&lt;b&gt;衔接DataStream API（面向开发者）和Flink内核的逻辑结构&lt;/b&gt;&lt;/span&gt;&lt;b style=&quot;font-size: 14px;&quot;&gt;)-关注一些属性&lt;/b&gt;&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="1130" y="670" width="230" height="80" as="geometry" />
+          <mxGeometry x="1460" y="1100" width="230" height="80" as="geometry" />
         </mxCell>
         <mxCell id="znwijTAoPct9jV0FG-Yg-10" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="znwijTAoPct9jV0FG-Yg-2" target="znwijTAoPct9jV0FG-Yg-7">
           <mxGeometry relative="1" as="geometry" />
@@ -91,7 +91,7 @@
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="znwijTAoPct9jV0FG-Yg-2" value="&lt;span style=&quot;font-size: 14px;&quot;&gt;物理Transformation(继承PhysicalTransformation)&lt;/span&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="340" y="870" width="190" height="80" as="geometry" />
+          <mxGeometry x="670" y="1300" width="190" height="80" as="geometry" />
         </mxCell>
         <mxCell id="znwijTAoPct9jV0FG-Yg-22" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="znwijTAoPct9jV0FG-Yg-3" target="znwijTAoPct9jV0FG-Yg-16">
           <mxGeometry relative="1" as="geometry" />
@@ -112,49 +112,49 @@
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="znwijTAoPct9jV0FG-Yg-3" value="&lt;span style=&quot;font-size: 14px;&quot;&gt;虚拟Transformation(非继承PhysicalTransformation)&lt;/span&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="1650" y="870" width="190" height="80" as="geometry" />
+          <mxGeometry x="1980" y="1300" width="190" height="80" as="geometry" />
         </mxCell>
         <mxCell id="znwijTAoPct9jV0FG-Yg-6" value="&lt;span style=&quot;font-size: 14px;&quot;&gt;SourceTransformation（从数据源读取数据的Transformation,一个作业可以有多个）&lt;/span&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="10" y="1050" width="190" height="80" as="geometry" />
+          <mxGeometry x="340" y="1480" width="190" height="80" as="geometry" />
         </mxCell>
         <mxCell id="znwijTAoPct9jV0FG-Yg-7" value="&lt;span style=&quot;font-size: 14px;&quot;&gt;SinkTransformation将数据写到外部存储 参见： StreamExecutionEnvironment&lt;/span&gt;&lt;div&gt;&lt;span style=&quot;font-size: 14px;&quot;&gt;#addSink,sinkTo&lt;/span&gt;&lt;br&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="230" y="1050" width="190" height="80" as="geometry" />
+          <mxGeometry x="560" y="1480" width="190" height="80" as="geometry" />
         </mxCell>
         <mxCell id="znwijTAoPct9jV0FG-Yg-8" value="&lt;span style=&quot;font-size: 14px;&quot;&gt;OneInputTransformation只接收一个输入流 参见&amp;nbsp; DataStream#map,filter等等&lt;/span&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="450" y="1050" width="190" height="80" as="geometry" />
+          <mxGeometry x="780" y="1480" width="190" height="80" as="geometry" />
         </mxCell>
         <mxCell id="znwijTAoPct9jV0FG-Yg-9" value="&lt;span style=&quot;font-size: 14px;&quot;&gt;TwoInputTransformation接收两种流作为输入（类型可相同也可不同） 参见IntervalJoinExample.java 里面的process方法&lt;/span&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="670" y="1050" width="200" height="90" as="geometry" />
+          <mxGeometry x="1000" y="1480" width="200" height="90" as="geometry" />
         </mxCell>
         <mxCell id="znwijTAoPct9jV0FG-Yg-12" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.436;entryY=0.013;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="znwijTAoPct9jV0FG-Yg-2" target="znwijTAoPct9jV0FG-Yg-6">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="znwijTAoPct9jV0FG-Yg-14" value="&lt;span style=&quot;font-size: 14px;&quot;&gt;SideOutputTransformation从旁路输出中转换而来，根据&lt;b&gt;OutputTag&lt;/b&gt;可以有多个下游的SideOutputTransformation。参见：&lt;/span&gt;&lt;span style=&quot;background-color: rgb(255, 255, 255); font-family: &amp;quot;JetBrains Mono&amp;quot;, monospace; font-size: 10.5pt;&quot;&gt;SideOutputExample&lt;/span&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="930" y="1055" width="190" height="80" as="geometry" />
+          <mxGeometry x="1260" y="1485" width="190" height="80" as="geometry" />
         </mxCell>
         <mxCell id="znwijTAoPct9jV0FG-Yg-15" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.429;entryY=0.039;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="znwijTAoPct9jV0FG-Yg-3" target="znwijTAoPct9jV0FG-Yg-14">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="znwijTAoPct9jV0FG-Yg-16" value="&lt;span style=&quot;font-size: 14px;&quot;&gt;SplitTransformation&lt;/span&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="1130" y="1055" width="190" height="80" as="geometry" />
+          <mxGeometry x="1460" y="1485" width="190" height="80" as="geometry" />
         </mxCell>
         <mxCell id="znwijTAoPct9jV0FG-Yg-17" value="&lt;span style=&quot;font-size: 14px;&quot;&gt;SelectTransformation&lt;/span&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="1340" y="1055" width="190" height="80" as="geometry" />
+          <mxGeometry x="1670" y="1485" width="190" height="80" as="geometry" />
         </mxCell>
         <mxCell id="znwijTAoPct9jV0FG-Yg-18" value="&lt;span style=&quot;font-size: 14px;&quot;&gt;PartitionTransformation&lt;/span&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="1580" y="1055" width="190" height="80" as="geometry" />
+          <mxGeometry x="1910" y="1485" width="190" height="80" as="geometry" />
         </mxCell>
         <mxCell id="znwijTAoPct9jV0FG-Yg-19" value="&lt;span style=&quot;font-size: 14px;&quot;&gt;UnionTransformation&lt;/span&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="1810" y="1055" width="190" height="80" as="geometry" />
+          <mxGeometry x="2140" y="1485" width="190" height="80" as="geometry" />
         </mxCell>
         <mxCell id="znwijTAoPct9jV0FG-Yg-20" value="&lt;span style=&quot;font-size: 14px;&quot;&gt;FeedbackTransformation&lt;/span&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="2030" y="1055" width="190" height="80" as="geometry" />
+          <mxGeometry x="2360" y="1485" width="190" height="80" as="geometry" />
         </mxCell>
         <mxCell id="znwijTAoPct9jV0FG-Yg-21" value="&lt;span style=&quot;font-size: 14px;&quot;&gt;CoFeedbackTransformation&lt;/span&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="2260" y="1055" width="190" height="80" as="geometry" />
+          <mxGeometry x="2590" y="1485" width="190" height="80" as="geometry" />
         </mxCell>
         <mxCell id="znwijTAoPct9jV0FG-Yg-28" value="&lt;font style=&quot;&quot;&gt;&lt;b style=&quot;font-size: 14px;&quot;&gt;3.4 算子StreamOperator&lt;/b&gt;&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="1130" y="1260" width="230" height="80" as="geometry" />
+          <mxGeometry x="1460" y="1690" width="230" height="80" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
