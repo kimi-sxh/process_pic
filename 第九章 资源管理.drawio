@@ -1,9 +1,83 @@
 <mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Safari/537.36" version="24.7.7">
   <diagram name="第 1 页" id="iIECJWi-0OoufL-8ScMg">
-    <mxGraphModel>
+    <mxGraphModel dx="2036" dy="3190" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="3300" pageHeight="2339" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
+        <mxCell id="RD94ebbCXBeV2DK-xxkx-25" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="RD94ebbCXBeV2DK-xxkx-31" target="RD94ebbCXBeV2DK-xxkx-32">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="RD94ebbCXBeV2DK-xxkx-26" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="RD94ebbCXBeV2DK-xxkx-31" target="RD94ebbCXBeV2DK-xxkx-33">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="RD94ebbCXBeV2DK-xxkx-27" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="RD94ebbCXBeV2DK-xxkx-31" target="RD94ebbCXBeV2DK-xxkx-34">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="RD94ebbCXBeV2DK-xxkx-28" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="RD94ebbCXBeV2DK-xxkx-31" target="RD94ebbCXBeV2DK-xxkx-37">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="RD94ebbCXBeV2DK-xxkx-29" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="RD94ebbCXBeV2DK-xxkx-31" target="RD94ebbCXBeV2DK-xxkx-38">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="RD94ebbCXBeV2DK-xxkx-30" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="RD94ebbCXBeV2DK-xxkx-31" target="RD94ebbCXBeV2DK-xxkx-35">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="RD94ebbCXBeV2DK-xxkx-31" value="&lt;font style=&quot;font-size: 18px;&quot;&gt;集群资源（管理硬件资源）-yarn k8s&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="2060" y="-615" width="120" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="RD94ebbCXBeV2DK-xxkx-32" value="CPU" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="2580" y="-720" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="RD94ebbCXBeV2DK-xxkx-33" value="内存" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="2580" y="-600" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="RD94ebbCXBeV2DK-xxkx-34" value="GPU等等" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="2580" y="-480" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="RD94ebbCXBeV2DK-xxkx-35" value="&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="whiteSpace=wrap;html=1;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="1760" y="-860" width="270" height="160" as="geometry" />
+        </mxCell>
+        <mxCell id="RD94ebbCXBeV2DK-xxkx-36" value="管理" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="2250" y="-610" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="RD94ebbCXBeV2DK-xxkx-37" value="Pod2运行一个TaskManager" style="whiteSpace=wrap;html=1;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="2060" y="-760" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="RD94ebbCXBeV2DK-xxkx-38" value="..." style="whiteSpace=wrap;html=1;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="2250" y="-760" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="RD94ebbCXBeV2DK-xxkx-39" value="Pod1运行一个TaskManager" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="1770" y="-850" width="170" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="RD94ebbCXBeV2DK-xxkx-40" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="RD94ebbCXBeV2DK-xxkx-41" target="RD94ebbCXBeV2DK-xxkx-47">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="RD94ebbCXBeV2DK-xxkx-41" value="TaskSlot&lt;div&gt;&lt;br&gt;&lt;div&gt;Source&lt;/div&gt;&lt;div&gt;map&lt;/div&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1780" y="-805" width="60" height="85" as="geometry" />
+        </mxCell>
+        <mxCell id="RD94ebbCXBeV2DK-xxkx-42" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="RD94ebbCXBeV2DK-xxkx-43" target="RD94ebbCXBeV2DK-xxkx-47">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="RD94ebbCXBeV2DK-xxkx-43" value="TaskSlot&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;keyby/&lt;/div&gt;&lt;div&gt;window/&lt;/div&gt;&lt;div&gt;apply&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1860" y="-805" width="60" height="85" as="geometry" />
+        </mxCell>
+        <mxCell id="RD94ebbCXBeV2DK-xxkx-44" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="RD94ebbCXBeV2DK-xxkx-45">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1800" y="-670" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="RD94ebbCXBeV2DK-xxkx-45" value="TaskSlot&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;sink&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1950" y="-805" width="60" height="85" as="geometry" />
+        </mxCell>
+        <mxCell id="RD94ebbCXBeV2DK-xxkx-46" value="Java进程" style="shape=callout;whiteSpace=wrap;html=1;perimeter=calloutPerimeter;" vertex="1" parent="1">
+          <mxGeometry x="1970" y="-940" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="RD94ebbCXBeV2DK-xxkx-47" value="java线程" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="1770" y="-669" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="RD94ebbCXBeV2DK-xxkx-48" value="资源管理器" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="2130" y="-650" width="70" height="30" as="geometry" />
+        </mxCell>
       </root>
     </mxGraphModel>
   </diagram>
